@@ -11,8 +11,8 @@ const About = () => {
         setToggleState(index);
     };
     return (
-        <div className=" container mx-auto mt-10 px-44 lg:px-0 md:px-0 sm:px-0 ">
-            <div className="flex lg:flex-wrap md:flex-wrap sm:flex-wrap p-5 pb-[95px] rounded-xl shadow-2xl">
+        <div className=" container mx-auto mt-10 px-36 lg:px-0 md:px-0 sm:px-0 ">
+            <div className="flex lg:flex-wrap md:flex-wrap sm:flex-wrap p-5 pb-[95px] rounded-3xl shadow-lg">
                 <div className="">
                     <div className="bg-[#F4C485] w-[550px] md:w-[550px] sm:w-[300px] h-[550px] md:h-[550px] sm:h-[300px] rounded-full mx-0 lg:mx-48 md:mx-20 sm:mx-5">
                         <img src={about} alt="" className="" />

@@ -1,7 +1,7 @@
-import PricingCard from '../../../../component/PricingCard/PricingCard';
+import PricingCard from "../../../../component/PricingCard/PricingCard";
 
 
-const Individual = () => {
+const Professional = () => {
     return (
         <div className='mt-5'>
 
@@ -11,31 +11,32 @@ const Individual = () => {
                 <PricingCard
                     icon={"mdi:airballoon"}
                     title={"Basic Plan"}
-                    amount={"09"}
-                    time={"month"}
-                    btnBg={'bg-secondary'}
+                    amount={"199"}
+                    time={"Yearly"}
+                    btnBg={'bg-[#1C2F50]'}
                 />
 
                 {/* Card 2 */}
                 <PricingCard
                     icon={"material-symbols:airplanemode-active"}
                     title={"Startup Plan"}
-                    amount={"49"}
-                    time={"month"}
-                    btnBg={'bg-[#1C2F50]'}
+                    amount={"249"}
+                    time={"Yearly"}
+                    btnBg={'bg-secondary'}
                 />
 
                 {/* Card 3 */}
                 <PricingCard
                     icon={"mdi:rocket"}
                     title={"Enterprise Plan"}
-                    amount={"99"}
-                    time={"month"}
+                    amount={"299"}
+                    time={"Yearly"}
                     btnBg={'bg-secondary'}
                 />
             </div>
+            
         </div>
     );
 };
 
-export default Individual;
+export default Professional;
