@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html",
@@ -14,7 +15,7 @@ export default {
 
     extend: {
       colors: {
-        primary: "##1C2F50",
+        primary: "#1C2F50",
         secondary: "#2FB4AE",
         accent: "#979797",
         neutral: "#515151",

@@ -6,3 +6,8 @@
 .mixedBorder{
     border-style:solid solid dashed solid;
 }
+
+.cusDiv{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 31% 76%, 8% 97%, 16% 76%, 0% 75%);
+    background-color:#1E3C5A;
+}

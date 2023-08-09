@@ -1,5 +1,6 @@
 import { BsArrowRight } from "react-icons/bs";
 import { FaHeart, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const fristLinkData = [
@@ -31,6 +32,11 @@ const Footer = () => {
                 <div className="container mx-auto grid grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4">
                     <div className="flex flex-col space-y-4">
                         <h1 className='text-xl px-16 lg:px-0 md:px-0 sm:px-0'>A Private Limited is the most popular type of partnership Malta. The limited liability is, in fact, the only type of company allowed by Companies.</h1>
+                        <div>
+                            <div className="">
+
+                            </div>
+                        </div>
                     </div>
                     <div className="grid grid-cols-2">
 
@@ -47,8 +53,12 @@ const Footer = () => {
                         </div>
                         <div>
                             <h2 className="font-bold text-2xl">Linkedin</h2>
-                            <div className="flex">
-                                <FaLinkedin className="text-4xl text-white"></FaLinkedin> 
+                            <div className="cusDiv mt-4 p-5 rounded-3xl h-40 ">
+                                <p className="mb-3 lg:mb-3 md:mb-2 sm:mb-0">The full monty spiffing good time .</p>
+                                <Link className="text-white hover:text-secondary duration-700">@Harold.com</Link>
+                            </div>
+                            <div className="flex -mt-5">
+                                <FaLinkedin className="text-4xl text-white"></FaLinkedin>
                                 <span className="ml-3 mt-1 text-xl font-semibold">Linkedin</span>
                             </div>
                         </div>
@@ -70,10 +80,10 @@ const Footer = () => {
                 </div>
             </footer>
             <footer className="footer footer-center p-5 bg-[#15233B] text-base-content h-20">
-                <div className="flex justify-center text-xl">
-                    <p className="text-white">© 2023 Harold. Design with -</p>
+                <div className="flex justify-center text-xl lg:text-xl md:text-xl sm:text-sm">
+                    <p className="text-accent">© 2023 Harold. Design with -</p>
                     <FaHeart className="text-red-600"></FaHeart>
-                    <p className="text-white">All rights reserved. </p>
+                    <p className="text-accent">All rights reserved. </p>
                 </div>
 
 
