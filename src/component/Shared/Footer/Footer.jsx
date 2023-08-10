@@ -1,6 +1,7 @@
 import { BsArrowRight } from "react-icons/bs";
 import { FaHeart, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Icon } from '@iconify/react';
 
 const Footer = () => {
     const fristLinkData = [
@@ -28,24 +29,36 @@ const Footer = () => {
     ];
     return (
         <>
-            <footer className="px-10 py-44 bg-[#1C2F50] text-accent">
-                <div className="container mx-auto grid grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4">
+            <footer className="px-10 py-44 bg-[#1C2F50] text-[#8E97A8] -mt-20">
+                <div className="container mx-auto grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
                     <div className="flex flex-col space-y-4">
-                        <h1 className='text-xl px-16 lg:px-0 md:px-0 sm:px-0'>A Private Limited is the most popular type of partnership Malta. The limited liability is, in fact, the only type of company allowed by Companies.</h1>
-                        <div>
-                            <div className="">
-
+                        <h1 className='text-[18px] font-semibold px-16 lg:px-0 md:px-0 sm:px-0'>A Private Limited is the most popular type of partnership Malta. The limited liability is, in fact, the only type of company allowed by Companies.</h1>
+                        <div className="flex space-x-3 px-16 lg:px-0 md:px-0 sm:px-0">
+                            <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                                <Icon icon="ic:round-facebook" className="text-2xl  "/>
+                            </div>
+                            <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                                <Icon icon="mdi:instagram" className="text-2xl"/>
+                            </div>
+                            <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                                <Icon icon="mdi:twitter" className="text-2xl"/>
+                            </div>
+                            <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                                <Icon icon="mdi:linkedin" className="text-2xl"/>
+                            </div>
+                            <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                                <Icon icon="mdi:pinterest" className="text-2xl"/>
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2">
+                    <div className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
 
                         <div className="">
                             <h2 className="font-bold text-2xl">Company</h2>
                             <div className="flex flex-col">
                                 {
                                     fristLinkData.map((data, idx) =>
-                                        <a key={idx} href={data.url} target="_blank" rel="noreferrer" className=' text-[16px] font-serif pt-2 hover:underline underline-offset-1 flex items-center'><span><BsArrowRight className="text-xl mr-3"></BsArrowRight></span> {data.title}</a>
+                                        <a key={idx} href={data.url} target="_blank" rel="noreferrer" className=' text-[16px] font-semibold pt-3 hover:text-secondary duration-700 flex items-center'><span><BsArrowRight className="text-xl mr-3"></BsArrowRight></span> {data.title}</a>
                                     )
                                 }
                             </div>

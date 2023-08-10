@@ -1,6 +1,7 @@
 import About from "./About/About";
 import Achievement from "./Achievement/Achievement";
 import Blog from "./Blog/Blog";
+import Connect from "./Connect/Connect";
 import Pricing from "./Pricing/Pricing";
 import Services from "./Services/Services";
 import Works from "./Works/Works";
@@ -15,6 +16,7 @@ const Home = () => {
             <Works></Works>
             <Pricing></Pricing>
             <Blog></Blog>
+            <Connect></Connect>
         </div>
     );
 };
