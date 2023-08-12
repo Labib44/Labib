@@ -39,7 +39,7 @@ const Blog = () => {
     ]
     return (
         <div className=" pb-28">
-            <div className="container mx-auto p-5 px-36 lg:px-0 md:px-0 sm:px-0">
+            <div className="container mx-auto p-5 px-24 lg:px-0 md:px-0 sm:px-0">
                 <p className="p-2 font-bold text-sm text-accent text-center">Blog</p>
                 <h1 className="text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-primary font-semibold text-center">Our Regular News</h1>
                 <p className="text-center py-2 px-5 text-accent text-xl mt-3">A Private Limited is the most popular type of partnership Malta. The limited liability is, in fact, the only type of company allowed by Companies.</p>

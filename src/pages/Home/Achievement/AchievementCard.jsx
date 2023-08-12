@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import CountUp from 'react-countup';
+
 
 
 const AchievementCard = ({ AchievementData }) => {
@@ -8,7 +10,7 @@ const AchievementCard = ({ AchievementData }) => {
             <div className="flex justify-center">
                 <img src={icon} alt="" className="w-16 h-16" />
             </div>
-            <h1 className="text-4xl text-center font-bold mt-5"> {count}</h1>
+            <h1 className="text-4xl text-center font-bold mt-5"><CountUp end={parseInt(count)} />+</h1>
             <h1 className="text-xl text-center text-accent font-bold mt-3"> {title}</h1>
         </div>
     );

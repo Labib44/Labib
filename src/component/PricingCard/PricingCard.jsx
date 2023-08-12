@@ -7,7 +7,7 @@ const PricingCard = ({ icon, title, amount, btnBg ,time}) => {
             <div className='mixedBorder border-[3px] rounded-tr-[30px] rounded-bl-[30px] p-5 py-5 hover:bg-[#1C2F50] hover:text-white duration-500'>
                 <div className='flex'>
                     <Icon icon={icon} className=" text-secondary text-4xl" />
-                    <h1 className='text-xl text-primary font-bold ml-2 mt-1 '>{title}</h1>
+                    <h1 className='text-xl font-bold ml-2 mt-1 '>{title}</h1>
                 </div>
                 <div className='flex mt-3 '>
                     <p className='text-2xl font-semibold'>$ </p>

@@ -11,14 +11,14 @@ const About = () => {
         setToggleState(index);
     };
     return (
-        <div className=" container mx-auto mt-10 px-36 lg:px-0 md:px-0 sm:px-0 ">
-            <div className="flex lg:flex-wrap md:flex-wrap sm:flex-wrap p-5 pb-[95px] rounded-3xl shadow-lg">
+        <div className=" container mx-auto mt-10 px-24 lg:px-0 md:px-0 sm:px-0 ">
+            <div className="flex gap-20 lg:gap-20 md:gap-10 sm:gap-7 lg:flex-wrap md:flex-wrap sm:flex-wrap p-5 pb-[95px] rounded-3xl shadow-lg">
                 <div className="">
                     <div className="bg-[#F4C485] w-[550px] md:w-[550px] sm:w-[300px] h-[550px] md:h-[550px] sm:h-[300px] rounded-full mx-0 lg:mx-48 md:mx-20 sm:mx-5">
                         <img src={about} alt="" className="" />
                     </div>
                 </div>
-                <div className="ml-10 mt-0 lg:mt-28 md:mt-28 sm:mt-16">
+                <div className=" mt-0 lg:mt-28 md:mt-28 sm:mt-16">
                     <h1 className="text-6xl text-primary font-semibold p-3">About Me</h1>
                     <p className=" text-accent p-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English..</p>
 

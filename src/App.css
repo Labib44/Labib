@@ -11,3 +11,48 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 31% 76%, 8% 97%, 16% 76%, 0% 75%);
     background-color:#1E3C5A;
 }
+
+
+@keyframes shape {
+    0% {
+        transform: translatey(0px) rotate(200deg) ;
+       
+    }
+
+    50% {
+        transform: translatey(-80px) ;
+        
+    }
+
+    100% {
+        transform: translatey(0px) rotate(200deg) ;
+      
+    }
+}
+
+.animate-shape {
+    animation: shape 4s ease-in-out infinite;
+   
+}
+
+@keyframes shape3 {
+    0% {
+        transform: translatey(0px) rotate(100deg) scale(0.6,0.6);
+       
+    }
+
+    50% {
+        transform: translatey(-30px) scale(1.3, 1.3);;
+        
+    }
+
+    100% {
+        transform: translatey(0px) rotate(100deg) scale(0.6,0.6);
+      
+    }
+}
+
+.animate-shape3 {
+    animation: shape3 5s ease-in-out infinite;
+   
+}

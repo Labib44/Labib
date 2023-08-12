@@ -80,6 +80,7 @@ const WorkSlider = () => {
             <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
+                
 
                 autoplay={{
                     delay: 2500,

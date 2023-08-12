@@ -29,7 +29,7 @@ const Footer = () => {
     ];
     return (
         <>
-            <footer className="px-10 py-44 bg-[#1C2F50] text-[#8E97A8] -mt-20">
+            <footer className="px-10 py-44 bg-[#1C2F50] text-[#8E97A8] -mt-28">
                 <div className="container mx-auto grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
                     <div className="flex flex-col space-y-4">
                         <h1 className='text-[18px] font-semibold px-16 lg:px-0 md:px-0 sm:px-0'>A Private Limited is the most popular type of partnership Malta. The limited liability is, in fact, the only type of company allowed by Companies.</h1>

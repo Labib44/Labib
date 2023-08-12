@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Works = () => {
     return (
         <div className="px-5 bg-[#F4F6FB]">
-            <div className="container mx-auto pt-32 pb-32 lg:pt-32 md:pt-20 sm:pt-20 px-36 lg:px-0 md:px-0 sm:px-0">
+            <div className="container mx-auto pt-32 pb-32 lg:pt-32 md:pt-20 sm:pt-20 px-24 lg:px-0 md:px-0 sm:px-0">
                 <div className="flex justify-between">
                     <div>
                         <h1 className="text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-primary font-bold">My Latest Work</h1>
