@@ -5,7 +5,6 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import './WorkSlider.css';
 
 // import required modules
 // import { Autoplay, } from 'swiper';
@@ -80,7 +79,7 @@ const WorkSlider = () => {
             <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
-                
+
 
                 autoplay={{
                     delay: 2500,
@@ -111,10 +110,13 @@ const WorkSlider = () => {
                 className="mySwiper mt-10"
             >
                 {
-                    sliderData.map((slData, idx) => <SwiperSlide
+                    sliderData.map((slData, idx) => <div
                         key={idx}
-                        slData={slData}
-                    ><img src={slData.img} alt="" /></SwiperSlide>)
+                    >
+                        <SwiperSlide
+
+                        ><img src={slData.img} alt="" className="rounded-[30px] " /></SwiperSlide>
+                    </div>)
                 }
 
                 <div className="autoplay-progress hidden" slot="container-end">

@@ -1,0 +1,21 @@
+.bg-hero-image{
+    background-image: url('../../../assets/home/banner/bannerBg.png');
+    animation: 4s ease-in-out infinite;
+}
+
+@keyframes bg-hero-image  {
+    0% {
+        transform: translatey(0px) ;
+       
+    }
+
+    50% {
+        transform: translatey(-50px) ;
+        
+    }
+
+    100% {
+        transform: translatey(0px) ;
+      
+    }
+}
