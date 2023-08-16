@@ -5,6 +5,17 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [isMobileMenu, setIsMobileMenu] = useState(false);
+    const [fix, setFix]=useState(false);
+    console.log(fix);
+    function setFixed(){
+        if(window.scrollY>=1){
+            setFix(true)
+        }
+        else{
+            setFix(false)
+        }
+    }
+    window.addEventListener("scroll",setFixed)
     // console.log(isMobileMenu);
     const menuItem = <>
         <li className="flex"><Link className='flex items-center text-[13px] text-slate-500 font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-0 md:mt-0' to='/'>HOME</Link></li>
@@ -18,7 +29,7 @@ const Navbar = () => {
     </>
     return (
         <div>
-            <header className="p-4 bg-[#F4F6FB]">
+            <header className={fix ? "p-3 bg-white fixed z-50 w-full duration-700" : "p-3 bg-[#F4F6FB] duration-700"}>
                 <div className=" flex justify-between h-16 mx-44 lg:mx-44 md:mx-0 sm:mx-0">
                     <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2">
                         <img src={dark} alt="" className="w-32" />

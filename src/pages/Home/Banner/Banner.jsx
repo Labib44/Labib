@@ -10,7 +10,7 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className={`bg-hero-image h-screen lg:h-screen md:h-auto sm:h-auto bg-cover bg-no-repeat`}>
+        <div className="hero-image bg-[#F4F6FB] h-screen lg:h-screen md:h-auto sm:h-auto bg-cover bg-no-repeat">
             <div className="container mx-auto">
             <div className="flex justify-end pr-44 lg:pr-44 md:pr-0 sm:pr-0">
                 <img src={shape3} alt="" className=' mr-44 lg:mr-44 md:mr-20 sm:mr-10 mt-24 animate-shape3' />
