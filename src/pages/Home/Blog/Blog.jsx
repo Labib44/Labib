@@ -38,7 +38,7 @@ const Blog = () => {
         },
     ]
     return (
-        <div className=" pb-28">
+        <div id='blog' className=" pb-20">
             <div className="container mx-auto p-5 px-24 lg:px-0 md:px-0 sm:px-0">
                 <p className="p-2 font-bold text-sm text-accent text-center">Blog</p>
                 <h1 className="text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-primary font-semibold text-center">Our Regular News</h1>

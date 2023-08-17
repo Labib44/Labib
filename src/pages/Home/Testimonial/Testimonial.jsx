@@ -2,7 +2,7 @@ import TestimonialSlider from "./TestimonialSlider/TestimonialSlider";
 
 const Testimonial = () => {
     return (
-        <div className="p-5 bg-[#F4F6FB]">
+        <div id="testimonial" className="p-5 bg-[#F4F6FB]">
             <div className="container mx-auto py-28 lg:py-32 md:py-20 sm:py-20 px-24 lg:px-0 md:px-0 sm:px-0">
                 <p className=" text-accent text-center">TESTIMONIAL</p>
                 <h1 className="text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-primary font-bold text-center">People talk about us</h1>

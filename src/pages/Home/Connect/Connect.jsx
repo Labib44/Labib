@@ -10,7 +10,7 @@ const Connect = () => {
         console.log(data);
     }
     return (
-        <div className="bg-[#F4F6FB] p-5">
+        <div id='connect' className="bg-[#F4F6FB] p-5 mt-10">
             <img src={shape} alt="" className='ml-44 lg:ml-44 md:ml-20 sm:ml-10 mt-24 animate-shape' />
             <div className="container mx-auto p-5 px-24 lg:px-0 md:px-0 sm:px-0 -mt-44">
                 <div className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 mt-24">

@@ -3,10 +3,12 @@ import { FaUser } from "react-icons/fa";
 import { MdCardTravel } from "react-icons/md";
 import Individual from "../Individual/Individual";
 import Professional from "../Professional/Professional";
+import { useTheme } from "../../../../context/ThemeProvider/ThemeProvider";
 
 
 const PricingTabBar = () => {
     const [toggleState, setToggleState] = useState(1);
+    const { isDark} = useTheme();
 
     const toggleTab = (index) => {
         setToggleState(index);
