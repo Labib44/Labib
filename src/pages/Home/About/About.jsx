@@ -4,8 +4,6 @@ import Experience from "./Experience/Experience";
 import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
 
-import './About.css';
-
 const About = () => {
     const [toggleState, setToggleState] = useState(1);
 
@@ -13,7 +11,7 @@ const About = () => {
         setToggleState(index);
     };
     return (
-        <div className=" container mx-auto mt-10 px-24 lg:px-0 md:px-0 sm:px-0 ">
+        <div className=" container mx-auto my-32 px-24 lg:px-0 md:px-0 sm:px-0 ">
             <div className="flex gap-20 lg:gap-20 md:gap-10 sm:gap-7 lg:flex-wrap md:flex-wrap sm:flex-wrap p-5 pb-[95px] rounded-3xl shadow-lg">
                 <div className="">
                     <div className="about-bg-rgb w-[550px] md:w-[550px] sm:w-[300px] h-[550px] md:h-[550px] sm:h-[300px] rounded-full mx-0 lg:mx-48 md:mx-20 sm:mx-5">

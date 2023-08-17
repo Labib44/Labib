@@ -1,65 +1,34 @@
-import { useState } from "react";
-
+import { useState, useEffect } from 'react';
 
 const TabBar = () => {
-    const [toggleState, setToggleState] = useState(1);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const testimonials = [
+        {
+            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            author: "John Doe",
+        },
+        {
+            quote: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+            author: "Jane Smith",
+        },
+        // Add more testimonials here
+    ];
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+        }, 5000);
 
-    const toggleTab = (index) => {
-        setToggleState(index);
-    };
-    console.log(toggleState);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div>
-            <div className="grid grid-flow-col text-center border-b border-gray-200 text-gray-500">
-                <button
-                    onClick={() => toggleTab(1)}
-                    type=""
-                    className={
-                        toggleState === 1
-                            ? "flex justify-center border-b-4 border-transparent text-indigo-600 border-indigo-600 py-4"
-                            : "flex justify-center py-4"
-                    }
-                >
-                    Skills
-                </button>
-                <button
-                    onClick={() => toggleTab(2)}
-                    type=""
-                    className={
-                        toggleState === 2
-                            ? "flex justify-center border-b-4 border-transparent text-indigo-600 border-indigo-600 py-4"
-                            : "flex justify-center py-4"
-                    }
-                >
-                    Experience
-                </button>
-                <button
-                    onClick={() => toggleTab(3)}
-                    type=""
-                    className={
-                        toggleState === 3
-                            ? "flex justify-center border-b-4 border-transparent text-indigo-600 border-indigo-600 py-4"
-                            : "flex justify-center py-4"
-                    }
-                >
-                    Education
-                </button>
+            <div className="max-w-md mx-auto p-4">
+                <div className="bg-white shadow-lg p-4 rounded-lg">
+                    <p className="italic text-lg mb-4">{testimonials[activeIndex].quote}</p>
+                    <p className="font-semibold">{testimonials[activeIndex].author}</p>
+                </div>
             </div>
-            <div className={toggleState === 1 ? " block" : " hidden"}>
-                <h1>Tab 1</h1>
-            </div>
-
-            <div className={toggleState === 2 ? " block" : " hidden"}>
-                <h1>Tab 2</h1>
-            </div>
-            
-            <div className={toggleState === 2 ? " block" : " hidden"}>
-                <h1>Tab 2</h1>
-            </div>
-
-
-
-
         </div>
     );
 };

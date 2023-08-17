@@ -12,7 +12,7 @@
     background-color:#1E3C5A;
 }
 
-
+/*Simple Animation */
 @keyframes shape {
     0% {
         transform: translatey(0px) rotate(200deg) ;
@@ -56,3 +56,57 @@
     animation: shape3 5s ease-in-out infinite;
    
 }
+
+/*Background for About */
+.about-bg-rgb {
+    animation: colorchange 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes colorchange {
+  0% {
+    background: #FDE280;
+  }
+  14% {
+    background: #ECAD89;
+  }
+  28% {
+    background: #93BCD5;
+  }
+  42% {
+    background: #75a9ae;
+  }
+  56% {
+    background: #A6DBC9;
+  }
+  70% {
+    background: #9EA6C9;
+  }
+  84% {
+    background: #C599A8;
+  }
+  100% {
+    background: #FDE280;
+  }
+}
+
+/* Banner Animation */
+.hero-image{
+  background-image: url('../src/assets/home/banner/bannerBg.png');
+  animation: floatBackground 10s infinite linear;
+}
+
+@keyframes floatBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 60% 60%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+

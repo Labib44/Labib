@@ -6,18 +6,17 @@ import VideoPlayer from "../../../component/VideoPlayer/VideoPlayer";
 import shape2 from "../../../assets/animation/shape-2.png";
 import shape3 from "../../../assets/animation/shape-3.png";
 
-import './Banner.css';
 
 const Banner = () => {
     return (
         <div className="hero-image bg-[#F4F6FB] h-screen lg:h-screen md:h-auto sm:h-auto bg-cover bg-no-repeat">
             <div className="container mx-auto">
-            <div className="flex justify-end pr-44 lg:pr-44 md:pr-0 sm:pr-0">
-                <img src={shape3} alt="" className=' mr-44 lg:mr-44 md:mr-20 sm:mr-10 mt-24 animate-shape3' />
+            <div className="flex justify-end pr-44 md:pr-0 sm:pr-0">
+                <img src={shape3} alt="" className=' mr-44 md:mr-20 sm:mr-10 mt-24 animate-shape3' />
             </div>
                 {/* -----------1---------- */}
-                <div className="flex lg:flex-col md:flex-col sm:flex-col justify-between mx-60 lg:mx-60 md:mx-5 sm:mx-5 ">
-                    <div className="flex items-center bg-white rounded-2xl w-auto lg:w-auto md:w-52 sm:w-52 h-auto lg:h-auto md:h-24 sm:h-24 px-8 my-3">
+                <div className="flex md:flex-col sm:flex-col justify-between mx-60 lg:mx-20 md:mx-5 sm:mx-5 ">
+                    <div className="flex items-center bg-white rounded-2xl w-auto md:w-52 sm:w-52 h-auto lg:h-auto md:h-24 sm:h-24 px-8 my-3">
                         <img src={hi} alt="" className="w-12 " />
                         <div className="ml-5">
                             <p className="text-accent">Hi, I am </p>
@@ -32,7 +31,7 @@ const Banner = () => {
                     </div>
                 </div>
                 {/* ----------2---------- */}
-                <div className="flex lg:flex-col md:flex-col sm:flex-col justify-between mt-40 max-h-24 mx-40 lg:mx-40 md:mx-5 sm:mx-5">
+                <div className="flex md:flex-col sm:flex-col justify-between mt-40 max-h-24 mx-40 lg:mx-5 md:mx-5 sm:mx-5">
                     <div className=" bg-white rounded-2xl p-3 lg:mt-0 md:mt-5 sm:mt-5">
                         <div className="flex items-center p-2">
                             <Icon icon="twemoji:video-game" className="text-2xl mr-3" />
@@ -57,9 +56,9 @@ const Banner = () => {
 
                 </div>
                 {/* --------------3------------ */}
-                <div className="flex lg:flex-col md:flex-col sm:flex-col justify-between mt-40 mx-72 lg:mx-72 md:mx-5 sm:mx-5">
+                <div className="flex md:flex-col sm:flex-col justify-between mt-40 mx-72 lg:mx-28 md:mx-5 sm:mx-5">
                     <div className="flex items-center p-3 lg:mt-0 md:mt-5 sm:mt-5">
-                        <p className="text-6xl text-primary font-bold">10</p>
+                        <p className="text-6xl lg:text-4xl text-primary font-bold">10</p>
                         <div className="text-accent p-2">
                             <p>Years</p>
                             <p className="">3D Gameing</p>

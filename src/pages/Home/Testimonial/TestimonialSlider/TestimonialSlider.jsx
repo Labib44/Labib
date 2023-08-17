@@ -1,4 +1,4 @@
-// import { useRef } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
@@ -7,111 +7,123 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-// import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+
+import { EffectCoverflow, Navigation } from 'swiper/modules';
 import img1 from "../../../../assets/testimonial/img1.png"
 import img2 from "../../../../assets/testimonial/img2.png"
 import img3 from "../../../../assets/testimonial/img3.png"
 import img4 from "../../../../assets/testimonial/img4.png"
 import img5 from "../../../../assets/testimonial/img5.png"
 
-// Import Swiper styles
-// Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/navigation';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const TestimonialSlider = () => {
-    // const swiperRef = useRef();
+    const [swiper, setSwiper] = useState(null);
 
-    // const sliderData = [
-    //     {
-    //         img: img1,
-    //         comment: "We use a customized application specifically designed a testing gnose to keep away for people.",
-    //         title: "Janice C. Campbe",
-    //         profession: "Embedded analytics",
-    //     },
-    //     {
-    //         img: img2,
-    //         comment: "We use a customized application specifically designed a testing gnose to keep away for people.",
-    //         title: "Janice C. Campbe",
-    //         profession: "Embedded analytics",
-    //     },
-    //     {
-    //         img: img3,
-    //         comment: "We use a customized application specifically designed a testing gnose to keep away for people.",
-    //         title: "Janice C. Campbe",
-    //         profession: "Embedded analytics",
-    //     },
-    //     {
-    //         img: img4,
-    //         comment: "We use a customized application specifically designed a testing gnose to keep away for people.",
-    //         title: "Janice C. Campbe",
-    //         profession: "Embedded analytics",
-    //     },
-    //     {
-    //         img: img5,
-    //         comment: "We use a customized application specifically designed a testing gnose to keep away for people.",
-    //         title: "Janice C. Campbe",
-    //         profession: "Embedded analytics",
-    //     },
-    // ]
+    const slideTo = (index) => swiper.slideTo(index);
+    console.log(slideTo);
+
+    const sliderDatas = [
+        {
+            img: img1,
+            comment: "We use a customized application specifically designed a testing gnose to keep away for people.",
+            title: "Janice C. Campbe",
+            profession: "Embedded analytics",
+        },
+        {
+            img: img2,
+            comment: "We use a customized application specifically designed a testing gnose to keep away for people.",
+            title: "Janice C. Campbe",
+            profession: "Embedded analytics",
+        },
+        {
+            img: img3,
+            comment: "We use a customized application specifically designed a testing gnose to keep away for people.",
+            title: "Janice C. Campbe",
+            profession: "Embedded analytics",
+        },
+        {
+            img: img4,
+            comment: "We use a customized application specifically designed a testing gnose to keep away for people.",
+            title: "Janice C. Campbe",
+            profession: "Embedded analytics",
+        },
+        {
+            img: img5,
+            comment: "We use a customized application specifically designed a testing gnose to keep away for people.",
+            title: "Janice C. Campbe",
+            profession: "Embedded analytics",
+        },
+    ]
     return (
-        // <div className="container">
-        //     <h1 className="heading">Flower Gallery</h1>
-        //     <Swiper
-        //         effect={'coverflow'}
-        //         grabCursor={true}
-        //         centeredSlides={true}
-        //         loop={true}
-        //         slidesPerView={'auto'}
-        //         coverflowEffect={{
-        //             rotate: 0,
-        //             stretch: 0,
-        //             depth: 100,
-        //             modifier: 2.5,
-        //         }}
-        //         pagination={{ el: '.swiper-pagination', clickable: true }}
-        //         navigation={{
-        //             nextEl: '.swiper-button-next',
-        //             prevEl: '.swiper-button-prev',
-        //             clickable: true,
-        //         }}
-        //         modules={[EffectCoverflow, Pagination, Navigation]}
-        //         className="swiper_container"
-        //     >
-        //         <SwiperSlide>
-        //             <img src={img1} alt="slide_image" />
-        //         </SwiperSlide>
-        //         <SwiperSlide>
-        //             <img src={img2} alt="slide_image" />
-        //         </SwiperSlide>
-        //         <SwiperSlide>
-        //             <img src={img3} alt="slide_image" />
-        //         </SwiperSlide>
-        //         <SwiperSlide>
-        //             <img src={img4} alt="slide_image" />
-        //         </SwiperSlide>
-        //         <SwiperSlide>
-        //             <img src={img5} alt="slide_image" />
-        //         </SwiperSlide>
-        //         <SwiperSlide>
-        //             <img src={img2} alt="slide_image" />
-        //         </SwiperSlide>
-        //         <SwiperSlide>
-        //             <img src={img2} alt="slide_image" />
-        //         </SwiperSlide>
+        <div className="">
 
-        //         <div className="slider-controler">
-        //             <div className="swiper-button-prev slider-arrow">
-        //                 <ion-icon name="arrow-back-outline"></ion-icon>
-        //             </div>
-        //             <div className="swiper-button-next slider-arrow">
-        //                 <ion-icon name="arrow-forward-outline"></ion-icon>
-        //             </div>
-        //             <div className="swiper-pagination"></div>
-        //         </div>
-        //     </Swiper>
-        // </div>
+            <Swiper
+                grabCursor={true}
+                centeredSlides={true}
+                loop={true}
+                slidesPerView={3}
+                coverflowEffect={{
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 0,
+                    modifier: 2.5,
+                }}
+
+                modules={[EffectCoverflow, Navigation]}
+                className="swiper_container"
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                    },
+                }}
+            >
+
+
+                <div className="m-10 ">
+                    {
+                        sliderDatas.map((sliderData, idx) =>
+                            <SwiperSlide
+
+                                className="mt-20"
+                                key={idx}
+                            >
+                                {({ isActive }) => (
+                                   
+                                    <div className={`${isActive ? "border-[3px] border-red-600 rounded-3xl -translate-y-16 duration-700 mt-20 p-5" : "mt-20 p-5 contrast-50"}`}>
+                                        <div className="avatar flex justify-center -mt-14">
+                                            <div className="w-[70px] rounded-full">
+                                                <img src={sliderData.img} alt="" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p className=" text-accent text-center py-5">"{sliderData.comment}"</p>
+                                            <hr />
+                                            <h1 className="text-center text-2xl text-primary font-bold pt-4">{sliderData.title}</h1>
+                                            <p className="font-semibold text-accent text-center py-2">{sliderData.profession}</p>
+                                        </div>
+                                    </div>
+                               
+                                  
+                                )}
+                                
+                            </SwiperSlide>)
+                    }
+                </div>
+
+            </Swiper>
+        </div>
     );
 };
 
