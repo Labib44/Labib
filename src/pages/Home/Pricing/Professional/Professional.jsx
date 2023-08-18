@@ -14,6 +14,7 @@ const Professional = () => {
                     amount={"199"}
                     time={"Yearly"}
                     btnBg={'bg-[#1C2F50]'}
+                    rgbBorder={'rgbBorder'}
                 />
 
                 {/* Card 2 */}

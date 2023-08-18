@@ -18,7 +18,7 @@ const PricingCard = ({ icon, title, amount, btnBg, time, rgbBorder}) => {
 
                 </div>
             </div>
-            <div className={`' border-[3px] border-t-0 ${rgbBorder} rounded-bl-[30px] p-5'`}>
+            <div className={`' border-[3px] border-t-0 ${rgbBorder} rounded-bl-[30px] p-5 '`}>
                 <div className='flex gap-2 pt-5 '>
                     <Icon icon="mdi:check" className='text-2xl text-secondary' />
                     <p className='text-xl text-accent'>2 App and project</p>
@@ -45,7 +45,7 @@ const PricingCard = ({ icon, title, amount, btnBg, time, rgbBorder}) => {
                 </div>
 
 
-                <button className={`btn w-full ${btnBg} hover:${btnBg} text-white mt-10 `}>
+                <button className={` btn w-full ${btnBg} hover:${btnBg} text-white mt-10 `}>
                     <Icon icon="mdi:check-all" className='text-xl' /> Choose Plane
                 </button>
             </div>
