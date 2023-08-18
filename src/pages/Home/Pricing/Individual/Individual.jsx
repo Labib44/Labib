@@ -23,6 +23,7 @@ const Individual = () => {
                     amount={"49"}
                     time={"month"}
                     btnBg={'bg-[#1C2F50]'}
+                    rgbBorder={'rgbBorder'}
                 />
 
                 {/* Card 3 */}

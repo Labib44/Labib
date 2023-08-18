@@ -11,7 +11,7 @@ import { useTheme } from "../../../context/ThemeProvider/ThemeProvider";
 const Banner = () => {
     const { isDark} = useTheme();
     return (
-        <div id="home" className={`"hero-image  h-screen lg:h-screen md:h-auto sm:h-auto bg-cover bg-no-repeat" ${!isDark ? "bg-[#343F4B]" : "bg-[#F4F6FB]"}`}>
+        <div id="home" className={`" hero-image  h-screen lg:h-screen md:h-auto sm:h-auto bg-cover bg-no-repeat" ${!isDark ? "bg-[#343F4B]" : "bg-[#F4F6FB]"}`}>
             <div className="container mx-auto">
             <div className="flex justify-end pr-44 md:pr-0 sm:pr-0">
                 <img src={shape3} alt="" className=' mr-44 md:mr-20 sm:mr-10 mt-24 animate-shape3' />

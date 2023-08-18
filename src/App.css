@@ -5,12 +5,9 @@
 
 .mixedBorder{
     border-style:solid solid dashed solid;
+    
 }
 
-.cusDiv{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 31% 76%, 8% 97%, 16% 76%, 0% 75%);
-    background-color:#1E3C5A;
-}
 
 /*Simple Animation */
 @keyframes shape {
@@ -110,3 +107,59 @@
   }
 }
 
+
+/* Footer sms shape box */
+.box {
+  background-color: #374a5e;
+  height: 120px;
+  position: relative;
+  float: left;
+  border-radius: 20px;
+}
+
+.box.arrow-bottom:after {
+  content: " ";
+  position: absolute;
+  left: 20px;
+  bottom: -50px;
+  rotate: 30deg;
+  border-top: 70px solid #374a5e;
+  border-right: 25px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: none;
+}
+
+/* Contact border */
+.rgbBorder {
+  animation: colorchange 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes colorchange {
+0% {
+   border-color: #fad44a;
+}
+14% {
+  border-color: #ef8f58;
+}
+28% {
+  border-color: #7fc6f3;
+}
+42% {
+  border-color: #31b7c3;
+}
+56% {
+  border-color: #3ec397;
+}
+70% {
+  border-color: #6375c5;
+}
+84% {
+  border-color: #a13a5d;
+}
+100% {
+  border-color: #fad44a;
+}
+}

@@ -103,7 +103,7 @@ const TestimonialSlider = () => {
                             >
                                 {({ isActive }) => (
                                    
-                                    <div className={`${isActive ? "border-[3px] border-red-600 rounded-3xl -translate-y-16 duration-700 mt-20 p-5" : "mt-20 p-5 contrast-50"}`}>
+                                    <div className={`${isActive ? "border-[3px] rgbBorder rounded-3xl -translate-y-16 duration-700 mt-20 p-5" : "mt-20 p-5 contrast-50"}`}>
                                         <div className="avatar flex justify-center -mt-14">
                                             <div className="w-[70px] rounded-full">
                                                 <img src={sliderData.img} alt="" />
