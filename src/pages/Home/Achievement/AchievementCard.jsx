@@ -9,7 +9,7 @@ const AchievementCard = ({ AchievementData }) => {
     const { icon, title, count } = AchievementData;
 
     return (
-        <div className={`" rounded-2xl shadow-2xl p-6 bg-[#F4F6FB] " ${!isDark ? "bg-[#343F4B]" : ""}`}>
+        <div className={`" rounded-2xl shadow-2xl p-6  " ${!isDark ? "bg-[#343F4B]" : "bg-[#F4F6FB]"}`}>
             <div className="flex justify-center">
                 <img src={icon} alt="" className="w-16 h-16" />
             </div>

@@ -8,7 +8,7 @@ import { useTheme } from "../../../context/ThemeProvider/ThemeProvider";
 const Navbar = () => {
     const [isMobileMenu, setIsMobileMenu] = useState(false);
     const [fix, setFix] = useState(false);
-    const { isDark, setIsDark } = useTheme();
+    const { isDark } = useTheme();
 
 
     function setFixed() {

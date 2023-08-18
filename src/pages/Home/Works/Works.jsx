@@ -7,7 +7,7 @@ const Works = () => {
     const { isDark} = useTheme();
 
     return (
-        <div id="works" className={`" px-5 bg-[#F4F6FB] " ${!isDark ? "bg-[#343F4B]": ""}`}>
+        <div id="works" className={`" px-5 " ${!isDark ? "bg-[#343F4B]": "bg-[#F4F6FB]"}`}>
             <div className="container mx-auto pt-32 pb-32 lg:pt-32 md:pt-20 sm:pt-20 px-24 lg:px-0 md:px-0 sm:px-0">
                 <div className="flex justify-between">
                     <div>

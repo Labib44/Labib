@@ -18,9 +18,11 @@ import img5 from "../../../../assets/testimonial/img5.png"
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { useTheme } from "../../../../context/ThemeProvider/ThemeProvider";
 
 const TestimonialSlider = () => {
     const [swiper, setSwiper] = useState(null);
+    const { isDark} = useTheme();
 
     const slideTo = (index) => swiper.slideTo(index);
     console.log(slideTo);
@@ -110,7 +112,7 @@ const TestimonialSlider = () => {
                                         <div>
                                             <p className=" text-accent text-center py-5">"{sliderData.comment}"</p>
                                             <hr />
-                                            <h1 className="text-center text-2xl text-primary font-bold pt-4">{sliderData.title}</h1>
+                                            <h1 className={`" text-center text-2xl text-primary font-bold pt-4 " ${!isDark ? "text-white" : " text-primary"}`}>{sliderData.title}</h1>
                                             <p className="font-semibold text-accent text-center py-2">{sliderData.profession}</p>
                                         </div>
                                     </div>

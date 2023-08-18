@@ -1,10 +1,13 @@
 /* eslint-disable react/prop-types */
 import { Icon } from '@iconify/react';
+import { useTheme } from '../../context/ThemeProvider/ThemeProvider';
 
 const PricingCard = ({ icon, title, amount, btnBg ,time}) => {
+    const { isDark} = useTheme();
+
     return (
         <div className=' '>
-            <div className='mixedBorder border-[3px] rounded-tr-[30px] rounded-bl-[30px] p-5 py-5 hover:bg-[#1C2F50] hover:text-white duration-500'>
+            <div className={`' mixedBorder border-[3px] rounded-tr-[30px] rounded-bl-[30px] p-5 py-5 hover:bg-[#1C2F50] hover:text-white duration-500 ' ${!isDark ? "text-white" : " "}`}>
                 <div className='flex'>
                     <Icon icon={icon} className=" text-secondary text-4xl" />
                     <h1 className='text-xl font-bold ml-2 mt-1 '>{title}</h1>

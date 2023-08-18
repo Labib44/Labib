@@ -6,8 +6,10 @@ import img1 from "../../../assets/blog/img-1.png"
 import img2 from "../../../assets/blog/img-2.png"
 import img3 from "../../../assets/blog/img-3.png"
 import BlogCard from "./BlogCard";
+import { useTheme } from '../../../context/ThemeProvider/ThemeProvider';
 
 const Blog = () => {
+    const { isDark} = useTheme();
     const blogDatas = [
         {
             id: 1,
@@ -38,10 +40,10 @@ const Blog = () => {
         },
     ]
     return (
-        <div id='blog' className=" pb-20">
+        <div id='blog' className={`" pb-20 " ${!isDark ? "bg-[#303841]" : "bg-white "}`}>
             <div className="container mx-auto p-5 px-24 lg:px-0 md:px-0 sm:px-0">
                 <p className="p-2 font-bold text-sm text-accent text-center">Blog</p>
-                <h1 className="text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-primary font-semibold text-center">Our Regular News</h1>
+                <h1 className={`" text-4xl lg:text-4xl md:text-3xl sm:text-3xl font-semibold text-center " ${!isDark ? "text-white" : " text-primary"}`}>Our Regular News</h1>
                 <p className="text-center py-2 px-5 text-accent text-xl mt-3">A Private Limited is the most popular type of partnership Malta. The limited liability is, in fact, the only type of company allowed by Companies.</p>
 
 

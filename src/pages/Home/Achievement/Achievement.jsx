@@ -34,7 +34,7 @@ const Achievement = () => {
         },
     ]
     return (
-        <div id="achievement" className={`" pb-28 bg-white " ${!isDark ? "bg-[#303841]" : ""}`}>
+        <div id="achievement" className={`" pb-28 " ${!isDark ? "bg-[#303841]" : "bg-white"}`}>
             <div className="container mx-auto pt-32 lg:pt-32 md:pt-20 sm:pt-20 px-24 lg:px-0 md:px-0 sm:px-0">
                 <h1 className="p-2 font-bold text-sm text-accent text-center">Counter</h1>
                 <h1 className={`" text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-primary font-bold text-center " ${!isDark ? "text-white" : ""}`}>Our Achievement</h1>

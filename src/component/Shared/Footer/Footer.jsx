@@ -2,8 +2,10 @@ import { BsArrowRight } from "react-icons/bs";
 import { FaHeart, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
+import { useTheme } from "../../../context/ThemeProvider/ThemeProvider";
 
 const Footer = () => {
+    const { isDark} = useTheme();
     const fristLinkData = [
         {
             title: "Security & Provciy",
@@ -29,7 +31,7 @@ const Footer = () => {
     ];
     return (
         <>
-            <footer className="px-10 py-44 bg-[#1C2F50] text-[#8E97A8] -mt-28">
+            <footer className={`" px-10 py-44 text-[#8E97A8] -mt-28 " ${!isDark ? "bg-[#303841]" : "bg-[#1C2F50]"}`}>
                 <div className="container mx-auto grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
                     <div className="flex flex-col space-y-4">
                         <h1 className='text-[18px] font-semibold px-16 lg:px-0 md:px-0 sm:px-0'>A Private Limited is the most popular type of partnership Malta. The limited liability is, in fact, the only type of company allowed by Companies.</h1>
@@ -54,7 +56,7 @@ const Footer = () => {
                     <div className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
 
                         <div className="">
-                            <h2 className="font-bold text-2xl">Company</h2>
+                            <h2 className={`" font-bold text-2xl " ${!isDark ? "text-white" : ""}`}>Company</h2>
                             <div className="flex flex-col">
                                 {
                                     fristLinkData.map((data, idx) =>
@@ -65,8 +67,8 @@ const Footer = () => {
 
                         </div>
                         <div>
-                            <h2 className="font-bold text-2xl">Linkedin</h2>
-                            <div className="cusDiv mt-4 p-5 rounded-3xl h-40 ">
+                            <h2 className={`" font-bold text-2xl "  ${!isDark ? "text-white" : ""}`}>Linkedin</h2>
+                            <div className={`" cusDiv mt-4 p-5 rounded-3xl h-40 " ${!isDark ? "bg-[#343F4B]" : " bg-[#1E3C5A]"}`}>
                                 <p className="mb-3 lg:mb-3 md:mb-2 sm:mb-0">The full monty spiffing good time .</p>
                                 <Link className="text-white hover:text-secondary duration-700">@Harold.com</Link>
                             </div>
@@ -78,7 +80,7 @@ const Footer = () => {
 
                     </div>
                     <div className="">
-                        <h2 className="text-2xl font-bold">Sign up</h2>
+                        <h2 className={`" text-2xl font-bold " ${!isDark ? "text-white" : ""}`}>Sign up</h2>
                         <p className="text-xl py-4">Follow our newsletter to stay updated about agency.</p>
                         <div className="flex h-14 mt-5">
                             <input type="text" name="parcel" id="parcel" placeholder="Subscribe"
@@ -92,7 +94,7 @@ const Footer = () => {
 
                 </div>
             </footer>
-            <footer className="footer footer-center p-5 bg-[#15233B] text-base-content h-20">
+            <footer className={`" footer footer-center p-5 text-base-content h-20 " ${!isDark ? "bg-[#343F4B]" : "bg-[#15233B]"}`}>
                 <div className="flex justify-center text-xl lg:text-xl md:text-xl sm:text-sm">
                     <p className="text-accent">© 2023 Harold. Design with -</p>
                     <FaHeart className="text-red-600"></FaHeart>
