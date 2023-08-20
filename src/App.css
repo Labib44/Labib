@@ -55,14 +55,14 @@
 }
 
 /*Background for About */
-.about-bg-rgb {
-    animation: colorchange 15s;
+.aboutRgb {
+    animation: aboutColorChange 15s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
 
-@keyframes colorchange {
+@keyframes aboutColorChange {
   0% {
     background: #FDE280;
   }
@@ -87,6 +87,41 @@
   100% {
     background: #FDE280;
   }
+}
+/* Under Line Rgb */
+
+.underLineRgb {
+  animation: underLineColorChange 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes underLineColorChange {
+0% {
+  border-color: #FDE280;
+}
+14% {
+  border-color: #ECAD89;
+}
+28% {
+  border-color: #93BCD5;
+}
+42% {
+  border-color: #75a9ae;
+}
+56% {
+  border-color: #A6DBC9;
+}
+70% {
+  border-color: #9EA6C9;
+}
+84% {
+  border-color: #C599A8;
+}
+100% {
+  border-color: #FDE280;
+}
 }
 
 /* Banner Animation */

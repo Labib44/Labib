@@ -13,11 +13,11 @@ const About = () => {
         setToggleState(index);
     };
     return (
-        <div className={`${!isDark ? "bg-[#303841] py-32" : "py-32"}`}>
+        <div className={`${!isDark ? " bg-[#303841] py-32" : "py-32"}`}>
             <div id="about" className=" container mx-auto px-24 lg:px-0 md:px-0 sm:px-0 ">
                 <div className="flex gap-20 lg:gap-20 md:gap-10 sm:gap-7 lg:flex-wrap md:flex-wrap sm:flex-wrap p-5 pb-[95px] rounded-3xl shadow-lg">
                     <div className="">
-                        <div className="about-bg-rgb w-[550px] md:w-[550px] sm:w-[300px] h-[550px] md:h-[550px] sm:h-[300px] rounded-full mx-0 lg:mx-48 md:mx-20 sm:mx-5">
+                        <div className=" aboutRgb w-[550px] md:w-[550px] sm:w-[300px] h-[550px] md:h-[550px] sm:h-[300px] rounded-full mx-0 lg:mx-48 md:mx-20 sm:mx-5">
                             <img src={about} alt="" className="" />
                         </div>
                     </div>
@@ -32,7 +32,7 @@ const About = () => {
                                     type=""
                                     className={
                                         toggleState === 1
-                                            ? "flex justify-center border-b-4  text-accent text-xl border-[#F4C485] py-4"
+                                            ? "underLineRgb flex justify-center border-b-4  text-accent text-xl py-4"
                                             : "flex justify-center text-accent text-xl py-4"
                                     }
                                 >
@@ -43,7 +43,7 @@ const About = () => {
                                     type=""
                                     className={
                                         toggleState === 2
-                                            ? "flex justify-center border-b-4  text-accent text-xl border-[#F4C485] py-4"
+                                            ? "underLineRgb flex justify-center border-b-4  text-accent text-xl py-4"
                                             : "flex justify-center text-accent text-xl py-4"
                                     }
                                 >
@@ -54,7 +54,7 @@ const About = () => {
                                     type=""
                                     className={
                                         toggleState === 3
-                                            ? "flex justify-center border-b-4 text-accent text-xl border-[#F4C485] py-4"
+                                            ? "underLineRgb flex justify-center border-b-4 text-accent text-xl py-4"
                                             : "flex justify-center text-accent text-xl py-4"
                                     }
                                 >

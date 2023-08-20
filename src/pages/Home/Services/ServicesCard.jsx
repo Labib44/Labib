@@ -8,7 +8,7 @@ const ServicesCard = ({ serviceData }) => {
     const { icon, title, description, bgcolor, textcolor } = serviceData;
     
     return (
-        <div className={`" rounded-2xl shadow-2xl p-6  " ${!isDark ? "bg-[#303841]" : "bg-white"}`}>
+        <div className={`" rounded-2xl shadow-2xl p-6 transition ease-in-out hover:-translate-y-4 duration-700 " ${!isDark ? "bg-[#303841]" : "bg-white"}`}>
             <div className={`w-14 h-14 ${bgcolor} text-3xl ${textcolor} p-3 rounded-xl`}>
                 {icon}
             </div>
