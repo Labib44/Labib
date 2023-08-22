@@ -3,91 +3,100 @@
     background-color:red;
 } */
 
-.mixedBorder{
-    border-style:solid solid dashed solid;
-    
+.mixedBorder {
+  border-style: solid solid dashed solid;
+
 }
 
 
 /*Simple Animation */
 @keyframes shape {
-    0% {
-        transform: translatey(0px) rotate(200deg) ;
-       
-    }
+  0% {
+    transform: translatey(0px) rotate(200deg);
 
-    50% {
-        transform: translatey(-80px) ;
-        
-    }
+  }
 
-    100% {
-        transform: translatey(0px) rotate(200deg) ;
-      
-    }
+  50% {
+    transform: translatey(-80px);
+
+  }
+
+  100% {
+    transform: translatey(0px) rotate(200deg);
+
+  }
 }
 
 .animate-shape {
-    animation: shape 4s ease-in-out infinite;
-   
+  animation: shape 4s ease-in-out infinite;
+
 }
 
 @keyframes shape3 {
-    0% {
-        transform: translatey(0px) rotate(100deg) scale(0.6,0.6);
-       
-    }
+  0% {
+    transform: translatey(0px) rotate(100deg) scale(0.6, 0.6);
 
-    50% {
-        transform: translatey(-30px) scale(1.3, 1.3);;
-        
-    }
+  }
 
-    100% {
-        transform: translatey(0px) rotate(100deg) scale(0.6,0.6);
-      
-    }
+  50% {
+    transform: translatey(-30px) scale(1.3, 1.3);
+    ;
+
+  }
+
+  100% {
+    transform: translatey(0px) rotate(100deg) scale(0.6, 0.6);
+
+  }
 }
 
 .animate-shape3 {
-    animation: shape3 5s ease-in-out infinite;
-   
+  animation: shape3 5s ease-in-out infinite;
+
 }
 
 /*Background for About */
 .aboutRgb {
-    animation: aboutColorChange 15s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
+  animation: aboutColorChange 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
 @keyframes aboutColorChange {
   0% {
     background: #FDE280;
   }
+
   14% {
     background: #ECAD89;
   }
+
   28% {
     background: #93BCD5;
   }
+
   42% {
     background: #75a9ae;
   }
+
   56% {
     background: #A6DBC9;
   }
+
   70% {
     background: #9EA6C9;
   }
+
   84% {
     background: #C599A8;
   }
+
   100% {
     background: #FDE280;
   }
 }
+
 /* Under Line Rgb */
 
 .underLineRgb {
@@ -98,34 +107,41 @@
 }
 
 @keyframes underLineColorChange {
-0% {
-  border-color: #FDE280;
-}
-14% {
-  border-color: #ECAD89;
-}
-28% {
-  border-color: #93BCD5;
-}
-42% {
-  border-color: #75a9ae;
-}
-56% {
-  border-color: #A6DBC9;
-}
-70% {
-  border-color: #9EA6C9;
-}
-84% {
-  border-color: #C599A8;
-}
-100% {
-  border-color: #FDE280;
-}
+  0% {
+    border-color: #FDE280;
+  }
+
+  14% {
+    border-color: #ECAD89;
+  }
+
+  28% {
+    border-color: #93BCD5;
+  }
+
+  42% {
+    border-color: #75a9ae;
+  }
+
+  56% {
+    border-color: #A6DBC9;
+  }
+
+  70% {
+    border-color: #9EA6C9;
+  }
+
+  84% {
+    border-color: #C599A8;
+  }
+
+  100% {
+    border-color: #FDE280;
+  }
 }
 
 /* Banner Animation */
-.hero-image{
+.hero-image {
   background-image: url('../src/assets/home/banner/bannerBg.png');
   animation: floatBackground 10s infinite linear;
 }
@@ -134,9 +150,11 @@
   0% {
     background-position: 0% 0%;
   }
+
   50% {
     background-position: 60% 60%;
   }
+
   100% {
     background-position: 0% 0%;
   }
@@ -173,28 +191,50 @@
 }
 
 @keyframes colorchange {
-0% {
-   border-color: #fad44a;
+  0% {
+    border-color: #fad44a;
+  }
+
+  14% {
+    border-color: #ef8f58;
+  }
+
+  28% {
+    border-color: #7fc6f3;
+  }
+
+  42% {
+    border-color: #31b7c3;
+  }
+
+  56% {
+    border-color: #3ec397;
+  }
+
+  70% {
+    border-color: #6375c5;
+  }
+
+  84% {
+    border-color: #a13a5d;
+  }
+
+  100% {
+    border-color: #fad44a;
+  }
 }
-14% {
-  border-color: #ef8f58;
+
+
+/* Details Slider */
+.image-gallery-left-nav SVG {
+  width: 25px !important;
 }
-28% {
-  border-color: #7fc6f3;
+
+.image-gallery-right-nav SVG {
+  width: 25px !important;
 }
-42% {
-  border-color: #31b7c3;
-}
-56% {
-  border-color: #3ec397;
-}
-70% {
-  border-color: #6375c5;
-}
-84% {
-  border-color: #a13a5d;
-}
-100% {
-  border-color: #fad44a;
-}
+
+.image-gallery-image {
+  border-radius: 20px !important;
+
 }

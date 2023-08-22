@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTheme } from "../../../context/ThemeProvider/ThemeProvider";
 import WorkSlider from "./WorkSlider/WorkSlider";
 import { BsArrowRight } from "react-icons/bs";
@@ -15,7 +16,8 @@ const Works = () => {
                         <p className="py-1  text-accent text-xl">Prefect solution for digital experience</p>
                     </div>
                     <div className="flex items-center underline underline-offset-8 decoration-2 decoration-secondary py-0">
-                        <h1 className="text-xl text-secondary font-bold mr-2">More Work</h1>
+
+                        <Link to={"/allProducts"} className="text-xl text-secondary font-bold mr-2">More Work</Link>
                         <BsArrowRight className="text-2xl text-secondary"></BsArrowRight>
                     </div>
                 </div>
