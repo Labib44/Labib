@@ -25,41 +25,112 @@ const WorkSlider = () => {
     };
     const sliderData = [
         {
-            img: img1
+            img: img1,
+            header:"Web Design",
+            title:"E-Commerce",
+            textColore:"text-[#1C2F50]",
         },
         {
-            img: img2
+            img: img2,
+            header:"Web Design",
+            title:"E-Commerce",
+            textColore:"text-[#1C2F50]",
         },
         {
-            img: img3
+            img: img3,
+            header:"NFT Web Design",
+            title:"NFT Maerketplace",
+            textColore:"text-[#FFFFFF]",
+            textSecondary:"text-[#ffffff80]",
         },
         {
-            img: img4
+            img: img4,
+            header:"App Design",
+            title:"Mobile App ",
+            textColore:"text-[#FFFFFF]",
+            textSecondary:"text-[#ffffff80]",
         },
         {
-            img: img1
+            img: img1,
+            header:"Web Design",
+            title:"E-Commerce",
+            textColore:"text-[#1C2F50]",
         },
         {
-            img: img2
+            img: img2,
+            header:"Web Design",
+            title:"E-Commerce",
+            textColore:"text-[#1C2F50]",
         },
         {
-            img: img3
+            img: img3,
+            header:"NFT Web Design",
+            title:"NFT Maerketplace",
+            textColore:"text-[#FFFFFF]",
+            textSecondary:"text-[#ffffff80]",
         },
         {
-            img: img4
+            img: img4,
+            header:"App Design",
+            title:"Mobile App ",
+            textColore:"text-[#FFFFFF]",
+            textSecondary:"text-[#ffffff80]",
         },
         {
-            img: img1
+            img: img1,
+            header:"Web Design",
+            title:"E-Commerce",
+            textColore:"text-[#1C2F50]",
         },
         {
-            img: img2
+            img: img2,
+            header:"Web Design",
+            title:"E-Commerce",
+            textColore:"text-[#1C2F50]",
         },
         {
-            img: img3
+            img: img3,
+            header:"NFT Web Design",
+            title:"NFT Maerketplace",
+            textColore:"text-[#FFFFFF]",
+            textSecondary:"text-[#ffffff80]",
         },
         {
-            img: img4
+            img: img4,
+            header:"App Design",
+            title:"Mobile App ",
+            textColore:"text-[#FFFFFF]",
+            textSecondary:"text-[#ffffff80]",
         },
+        {
+            img: img1,
+            header:"Web Design",
+            title:"E-Commerce",
+            textColore:"text-[#1C2F50]",
+        },
+        {
+            img: img2,
+            header:"Web Design",
+            title:"E-Commerce",
+            textColore:"text-[#1C2F50]",
+        },
+        {
+            img: img3,
+            header:"NFT Web Design",
+            title:"NFT Maerketplace",
+            textColore:"text-[#FFFFFF]",
+            textSecondary:"text-[#ffffff80]",
+        },
+        {
+            img: img4,
+            header:"App Design",
+            title:"Mobile App ",
+            textColore:"text-[#FFFFFF]",
+            textSecondary:"text-[#ffffff80]",
+        },
+       
+
+        
     ]
 
     return (
@@ -113,9 +184,15 @@ const WorkSlider = () => {
                     sliderData.map((slData, idx) => <div
                         key={idx}
                     >
-                        <SwiperSlide
-
-                        ><img src={slData.img} alt="" className="rounded-[30px] " /></SwiperSlide>
+                        <SwiperSlide>
+                            <div className=" relative">
+                                <img src={slData.img} alt="" className="rounded-[30px] " />
+                                <div className=" fixed top-5 p-10 w-full">
+                                    <h1 className={`${slData.textColore} text-xl font-semibold`}>{slData.header}</h1>
+                                    <p className={`${slData.textSecondary}`}>{slData.title}</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
                     </div>)
                 }
 

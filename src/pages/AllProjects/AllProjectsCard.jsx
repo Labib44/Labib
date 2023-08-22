@@ -7,7 +7,7 @@ const AllProjectsCard = ({ project }) => {
     const { isDark } = useTheme();
     const { picture, name, technology, details } = project;
     return (
-        <div className={`" rounded-2xl shadow-2xl " ${!isDark ? "bg-[#303841]" : "bg-white"}`}>
+        <div className={`" rounded-2xl shadow-lg " ${!isDark ? "bg-[#303841]" : "bg-white"}`}>
             <div>
                 <img src={picture} alt="" className="w-full rounded-t-2xl max-h-72" />
             </div>

@@ -56,7 +56,7 @@ const Connect = () => {
 
                     </div>
                     {/* Right side */}
-                    <div className={`' rgbBorder rounded-3xl border-l-[4px] shadow-xl p-10 mt-16 z-50 ' ${!isDark ? "bg-[#303841]" : " bg-[#F4F6FB]  "}`}>
+                    <div className={`' rgbBorder rounded-3xl border-l-[4px] shadow-xl p-10 mt-16 z-10 ' ${!isDark ? "bg-[#303841]" : " bg-[#F4F6FB]  "}`}>
                         <p className='text-accent text-xl font-semibold'>Let's talk</p>
                         <h1 className={`' text-3xl font-bold  pt-2 pb-3 ' ${!isDark ? "text-white" : " text-primary "}`}>Enter your project details</h1>
                         <p className='text-[17px] text-accent'>Content here, content here', making it look like readable English. Many desktop publishing packages.</p>

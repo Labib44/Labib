@@ -4,28 +4,28 @@
         "picture": "https://i.ibb.co/ncQvHQj/img-1.png",
         "name": "Web Design",
         "technology": "Tailwind css, React js, JavaScript, ",
-        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum."
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "
         },
     {
         "_id": "2",
         "picture": "https://i.ibb.co/t8QXgG9/img-2.png",
         "name": "App Design",
         "technology": "Tailwind css, React js, JavaScript, ",
-        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum."
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "
         },
     {
         "_id": "3",
         "picture": "https://i.ibb.co/S0P9W9n/img-3.png",
         "name": "Web Design",
         "technology": "Tailwind css, React js, JavaScript, ",
-        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum."
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "
         },
     {
         "_id": "4",
         "picture": "https://i.ibb.co/G7GYYYt/img-4.png",
         "name": "Web Design",
         "technology": "Tailwind css, React js, JavaScript, ",
-        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum."
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "
         }
         
 ]
