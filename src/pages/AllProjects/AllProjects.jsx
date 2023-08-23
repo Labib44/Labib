@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import AllProjectsCard from "./AllProjectsCard";
+import { useTheme } from "../../context/ThemeProvider/ThemeProvider";
 
 
 const AllProjects = () => {
+    const { isDark } = useTheme();
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
@@ -11,9 +13,9 @@ const AllProjects = () => {
             .then(data => setProjects(data))
     }, [])
     return (
-        <div className="bg-[#F4F6FB]">
-            <div className=" container mx-auto ">
-                <h1 className="text-4xl text-primary font-bold underline underline-offset-8 hover:text-secondary duration-700 px-5 py-10">All Projects</h1>
+        <div className={` ${!isDark ? "bg-[#343F4B] " : "bg-[#F4F6FB]"}`}>
+            <div className=" container mx-auto pt-20 px-24 lg:px-0 md:px-0 sm:px-0">
+                <h1 className={`" text-4xl font-bold underline underline-offset-8 hover:text-secondary duration-700 px-5 py-10 " ${!isDark ? " text-white" : "text-primary"}`}>All Projects</h1>
 
                 <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 pb-36">
                     {

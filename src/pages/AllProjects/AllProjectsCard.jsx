@@ -1,25 +1,22 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-import { useTheme } from "../../context/ThemeProvider/ThemeProvider";
+// import { useTheme } from "../../context/ThemeProvider/ThemeProvider";
 
 
 const AllProjectsCard = ({ project }) => {
-    const { isDark } = useTheme();
-    const { picture, name, technology, details } = project;
+    // const { isDark } = useTheme();
+    const { picture, name, title, technology, details, textPrimary, textSecondary } = project;
+
+
     return (
-        <div className={`" rounded-2xl shadow-lg " ${!isDark ? "bg-[#303841]" : "bg-white"}`}>
-            <div>
-                <img src={picture} alt="" className="w-full rounded-t-2xl max-h-72" />
+        <Link to={'/details'} className=" ">
+            <div style={{ backgroundImage: `url(${picture})` }} className="w-full h-96 bg-center bg-cover rounded-[30px] shadow-xl max-w-sm cursor-pointer">
+                <div className=" p-10 w-full">
+                    <h1 className={`${textPrimary} text-xl font-semibold`}>{name}</h1>
+                    <p className={`${textSecondary} py-2`}>{title}</p>
+                </div>
             </div>
-            <div className="flex justify-between p-5">
-                <h1 className="text-2xl text-primary font-bold">{name}</h1>
-                <Link to={'/details'} className="text-xl font-semibold text-secondary">Details</Link>
-            </div>
-            <div className="p-5">
-                <p className="text-xl text-primary font-bold">Technology: <span className="text-xl font-normal">{technology}</span></p>
-                <p className="text-primary py-3">{details}</p>
-            </div>
-        </div>
+        </Link>
     );
 };
 

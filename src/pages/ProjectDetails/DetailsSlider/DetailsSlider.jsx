@@ -21,13 +21,12 @@ const DetailsSlider = () => {
         }
     ];
     return (
-        <div className=" max-w-2xl text-sm rounded-[20px]">
+        <div className="bgImage bg-cover text-sm rounded-[20px]">
             <ImageGallery
                 items={images}
-                showFullscreenButton={true}
                 slideInterval={500}
                 slideOnThumbnailOver={true}
-                thumbnailPosition={'left'}
+                
             />
         </div>
     );

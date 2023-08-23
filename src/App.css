@@ -234,7 +234,34 @@
   width: 25px !important;
 }
 
+.image-gallery-slide {
+  width: 900px !important;
+  height: 500px !important;
+  border-radius: 20px !important;
+}
+.bgImage {
+  max-width: 896px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
 .image-gallery-image {
   border-radius: 20px !important;
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.image-gallery-slides{
+  border-radius: 20px !important;
+  width: 100% !important;
+ 
+}
 
+
+
+
+
+
+.image-gallery-fullscreen-button {
+  visibility: hidden !important;
 }
