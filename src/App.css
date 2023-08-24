@@ -257,11 +257,26 @@
  
 }
 
-
-
-
-
-
 .image-gallery-fullscreen-button {
   visibility: hidden !important;
 }
+@media (max-width: 1180px) {
+  .image-gallery {
+    width: 760px ;
+  }
+}
+
+@media  (max-width: 1024px) {
+  .image-gallery {
+    width: 730px ;
+  }
+}
+
+@media  (max-width: 767px) {
+  .image-gallery {
+    width: 350px ;
+  }
+}
+
+
+

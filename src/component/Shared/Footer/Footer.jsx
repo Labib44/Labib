@@ -61,7 +61,7 @@ const Footer = () => {
                             <div className="flex flex-col">
                                 {
                                     fristLinkData.map((data, idx) =>
-                                        <a key={idx} href={data.url} target="_blank" rel="noreferrer" 
+                                        <a key={idx} href={data.url} 
                                         className=' text-[16px] font-semibold pt-3 hover:text-secondary duration-700 flex items-center'><span><BsArrowRight className="text-xl mr-3"></BsArrowRight></span> {data.title}</a>
                                     )
                                 }

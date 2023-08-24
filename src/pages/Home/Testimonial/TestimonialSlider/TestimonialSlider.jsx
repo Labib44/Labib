@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
-import { EffectCoverflow, Navigation } from 'swiper/modules';
+import { EffectCoverflow, Navigation, Autoplay,} from 'swiper/modules';
 import img1 from "../../../../assets/testimonial/img1.png"
 import img2 from "../../../../assets/testimonial/img2.png"
 import img3 from "../../../../assets/testimonial/img3.png"
@@ -73,9 +73,14 @@ const TestimonialSlider = () => {
                     depth: 0,
                     modifier: 2.5,
                 }}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
 
-                modules={[EffectCoverflow, Navigation]}
+                modules={[EffectCoverflow, Navigation, Autoplay,]}
                 className="swiper_container"
+                
                 breakpoints={{
                     0: {
                         slidesPerView: 1,

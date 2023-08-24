@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 
 
 // import required modules
-// import { Autoplay, } from 'swiper';
+
 import { Autoplay, Navigation } from 'swiper/modules';
 import img1 from "../../../../assets/workSlider/img-1.png"
 import img2 from "../../../../assets/workSlider/img-2.png"
