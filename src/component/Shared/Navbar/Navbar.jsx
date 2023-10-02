@@ -55,7 +55,7 @@ const Navbar = () => {
             <header className={`${ content} `}>
                 <div className=" flex justify-between h-16 mx-44 lg:mx-0 md:mx-0 sm:mx-0 ">
                     <div>
-                        <Link to={"/"} className="flex items-center p-2">
+                        <Link to={"/"} className="flex items-center">
                             {isDark ?
                                 (<img src={dark} alt="" className="w-32" />)
                                 :
@@ -69,7 +69,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="items-center flex-shrink-0 md:hidden sm:hidden">
-                        <button className="self-center px-6 py-3 bg-[#1C2F50] text-white font-semibold rounded-full">Login</button>
+                        {/* <button className="self-center px-6 py-3 bg-[#1C2F50] text-white font-semibold rounded-full">Login</button> */}
                     </div>
                     <div className="hidden md:block sm:block">
                         <button className="p-4 hidden lg:block md:block sm:block"
@@ -83,7 +83,7 @@ const Navbar = () => {
                         {isMobileMenu && (
                             <ul className="absolute z-50 left-0 p-2 pb-5 shadow bg-base-100 w-full">
                                 {menuItem}
-                                <button className="self-center px-5 py-2 mt-5 bg-[#1C2F50] text-white font-semibold rounded-full ">Login</button>
+                                {/* <button className="self-center px-5 py-2 mt-5 bg-[#1C2F50] text-white font-semibold rounded-full ">Login</button> */}
                             </ul>
                         )}
                     </div>

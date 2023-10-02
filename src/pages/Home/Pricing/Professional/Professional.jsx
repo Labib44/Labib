@@ -10,29 +10,41 @@ const Professional = () => {
                 {/* card 1 */}
                 <PricingCard
                     icon={"mdi:airballoon"}
-                    title={"Basic Plan"}
-                    amount={"199"}
-                    time={"Yearly"}
-                    btnBg={'bg-[#1C2F50]'}
-                    rgbBorder={'rgbBorder'}
+                    title={"Golden"}
+                    amount={"2,50,000"}
+                    time={"Year"}
+                    btnBg={'bg-secondary'}
+                    pages={'Web page design (10 Pages)'}
+                    security={'Secure'}
+                    socialMedia={'Facebook page maintainance'}
+                    seo={'Gold SEO Service'}
                 />
 
                 {/* Card 2 */}
                 <PricingCard
-                    icon={"material-symbols:airplanemode-active"}
-                    title={"Startup Plan"}
-                    amount={"249"}
-                    time={"Yearly"}
-                    btnBg={'bg-secondary'}
+                     icon={"material-symbols:airplanemode-active"}
+                     title={"Platinum"}
+                     amount={"4,90,000"}
+                     time={"Year"}
+                     btnBg={'bg-[#1C2F50]'}
+                     rgbBorder={'rgbBorder'}
+                     pages={'Web page design (25 Pages)'}
+                     security={'13 Layer Security System'}
+                     socialMedia={'Facebook, Instagram, Linked In page maintainance'}
+                     seo={'Platinum SEO Service'}
                 />
 
                 {/* Card 3 */}
                 <PricingCard
                     icon={"mdi:rocket"}
-                    title={"Enterprise Plan"}
-                    amount={"299"}
-                    time={"Yearly"}
+                    title={"Premium"}
+                    amount={"8,90,000"}
+                    time={"Year"}
                     btnBg={'bg-secondary'}
+                    pages={'40 + Pages'}
+                    security={'Highly Secure'}
+                    socialMedia={'Facebook page maintainance'}
+                    seo={'Premium SEO Service'}
                 />
             </div>
             

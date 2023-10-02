@@ -2,7 +2,7 @@
 import { Icon } from '@iconify/react';
 import { useTheme } from '../../context/ThemeProvider/ThemeProvider';
 
-const PricingCard = ({ icon, title, amount, btnBg, time, rgbBorder}) => {
+const PricingCard = ({ icon, title, amount, btnBg, time, rgbBorder, pages, security,seo}) => {
     const { isDark } = useTheme();
 
     return (
@@ -13,7 +13,7 @@ const PricingCard = ({ icon, title, amount, btnBg, time, rgbBorder}) => {
                     <h1 className='text-xl font-bold ml-2 mt-1 '>{title}</h1>
                 </div>
                 <div className='flex mt-3 '>
-                    <p className='text-2xl font-semibold'>$ </p>
+                    <p className='text-2xl font-semibold'>৳</p>
                     <p className='text-4xl font-bold'>{amount} <span className='text-xl font-semibold'>/{time}</span></p>
 
                 </div>
@@ -21,27 +21,43 @@ const PricingCard = ({ icon, title, amount, btnBg, time, rgbBorder}) => {
             <div className={`' border-[3px] border-t-0 ${rgbBorder} rounded-bl-[30px] p-5 '`}>
                 <div className='flex gap-2 pt-5 '>
                     <Icon icon="mdi:check" className='text-2xl text-secondary' />
-                    <p className='text-xl text-accent'>2 App and project</p>
+                    <p className='text-xl text-accent'>React JS / Next JS website.</p>
                 </div>
                 <div className='flex gap-2 pt-5 '>
                     <Icon icon="mdi:check" className='text-2xl text-secondary' />
-                    <p className='text-xl text-accent'>400 Gb/s storange</p>
+                    <p className='text-xl text-accent'>{pages}</p>
                 </div>
                 <div className='flex gap-2 pt-5 '>
                     <Icon icon="mdi:check" className='text-2xl text-secondary' />
-                    <p className='text-xl text-accent'>Free coustom domain</p>
+                    <p className='text-xl text-accent'>Dynamic authentication system.</p>
                 </div>
                 <div className='flex gap-2 pt-5 '>
                     <Icon icon="mdi:check" className='text-2xl text-secondary' />
-                    <p className='text-xl text-accent'>Chat Support</p>
+                    <p className='text-xl text-accent'>Online payment system.</p>
                 </div>
                 <div className='flex gap-2 pt-5 '>
                     <Icon icon="mdi:check" className='text-2xl text-secondary' />
-                    <p className='text-xl text-accent'>No transaction fees</p>
+                    <p className='text-xl text-accent'>Domain hosting is provided.</p>
                 </div>
                 <div className='flex gap-2 pt-5 '>
                     <Icon icon="mdi:check" className='text-2xl text-secondary' />
-                    <p className='text-xl text-accent'>Unlimited Storage</p>
+                    <p className='text-xl text-accent'>{security}</p>
+                </div>
+                <div className='flex gap-2 pt-5 '>
+                    <Icon icon="mdi:check" className='text-2xl text-secondary' />
+                    <p className='text-xl text-accent'>SSL Add</p>
+                </div>
+                <div className='flex gap-2 pt-5 '>
+                    <Icon icon="mdi:check" className='text-2xl text-secondary' />
+                    <p className='text-xl text-accent'>{seo}</p>
+                </div>
+                <div className='flex gap-2 pt-5 '>
+                    <Icon icon="mdi:check" className='text-2xl text-secondary' />
+                    <p className='text-xl text-accent'>100% Mobile Responsive</p>
+                </div>
+                <div className='flex gap-2 pt-5 '>
+                    <Icon icon="mdi:check" className='text-2xl text-secondary' />
+                    <p className='text-xl text-accent'>Online support (24/7)</p>
                 </div>
 
 

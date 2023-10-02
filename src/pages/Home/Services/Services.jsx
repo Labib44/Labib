@@ -14,8 +14,18 @@ const Services = () => {
             icon:<MdCached/>,
             bgcolor: 'bg-[#E6DFF5]',
             textcolor: 'text-[#8e63e9]',
-            title:"Research & Analysis",
-            description:"We use a customized application specifically designed a testing gnose to keep away for people.",
+            title:"Website Design & Development.",
+            description:"We build applications that work for your business and your users.  we bring front-end, back-end, and architecture together to meet your business needs.",
+
+        },
+       
+        {
+            id:3,
+            icon:<BsLayersFill/>,
+            bgcolor: 'bg-[#FFF5CC]',
+            textcolor: 'text-[#e5ae47]',
+            title:"Research & Analysis.",
+            description:"Websites that are based on thorough research and analysis are more likely to succeed in attracting and retaining visitors, achieving business goals, and staying ahead of the competition.",
 
         },
         {
@@ -23,17 +33,8 @@ const Services = () => {
             icon:<BiCommentAdd/>,
             bgcolor: 'bg-[#F4D2D2]',
             textcolor: 'text-[#ef5555]',
-            title:"Research & Analysis",
-            description:"We use a customized application specifically designed a testing gnose to keep away for people.",
-
-        },
-        {
-            id:3,
-            icon:<BsLayersFill/>,
-            bgcolor: 'bg-[#FFF5CC]',
-            textcolor: 'text-[#e5ae47]',
-            title:"Research & Analysis",
-            description:"We use a customized application specifically designed a testing gnose to keep away for people.",
+            title:"QA & Testing.",
+            description:"QA and testing ensure that the website functions as intended and provides a positive user experience. This includes checking the website's usability, accessibility, and overall user interface design.",
 
         },
         {
@@ -41,8 +42,8 @@ const Services = () => {
             icon:<BsArrowUpSquare/>,
             bgcolor: 'bg-[#D3DEEE]',
             textcolor: 'text-[#639df5]',
-            title:"Research & Analysis",
-            description:"We use a customized application specifically designed a testing gnose to keep away for people.",
+            title:"Domain hosting.",
+            description:"Domain hosting is a service that allows you to publish your website on the internet, making it accessible to users worldwide. Choosing the right hosting plan and provider is crucial for the performance, security, and reliability of your website.",
 
         },
         {
@@ -50,8 +51,8 @@ const Services = () => {
             icon:<PiChartLineBold/>,
             bgcolor: 'bg-[#D5F0EF]',
             textcolor: 'text-[#3ea9a6]',
-            title:"Research & Analysis",
-            description:"We use a customized application specifically designed a testing gnose to keep away for people.",
+            title:"2 month free maintenance.",
+            description:"we are committed to your success. Our 2 Months Free Maintenance Package is designed to empower your online presence, giving you the freedom to concentrate on what you do best – running your business.",
 
         },
         {
@@ -59,8 +60,8 @@ const Services = () => {
             icon:<HiOutlineMailOpen/>,
             bgcolor: 'bg-[#F0D6E4]',
             textcolor: 'text-[#a73371]',
-            title:"Research & Analysis",
-            description:"We use a customized application specifically designed a testing gnose to keep away for people.",
+            title:"Online support (24/7).",
+            description:"Partnering with means more than just having a service provider – it means having a dedicated team of professionals committed to your success, day and night. With our 24/7 online support, your business is always in capable hands.",
 
         },
         

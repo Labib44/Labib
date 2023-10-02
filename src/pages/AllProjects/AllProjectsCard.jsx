@@ -9,13 +9,15 @@ const AllProjectsCard = ({ project }) => {
 
 
     return (
-        <Link to={'/details'} className=" ">
-            <div style={{ backgroundImage: `url(${picture})` }} className="w-full h-96 bg-center bg-cover rounded-[30px] shadow-xl max-w-sm cursor-pointer">
-                <div className=" p-10 w-full">
-                    <h1 className={`${textPrimary} text-xl font-semibold`}>{name}</h1>
-                    <p className={`${textSecondary} py-2`}>{title}</p>
-                </div>
+        <Link to={'/'} className="rounded-2xl shadow-xl bg-gray-100">
+            <div className=" p-6 w-full">
+                <h1 className={`${textPrimary} text-xl font-semibold`}>{name}</h1>
+                <p className={`${textSecondary} py-2`}>{title}</p>
             </div>
+            <img src={picture} alt="" className=" rounded-b-2xl shadow-xl h-[250px]"/>
+            {/* <div style={{ backgroundImage: `url(${picture})` }} className="w-full h-96 bg-center bg-cover rounded-[30px] shadow-xl max-w-sm cursor-pointer">
+                
+            </div> */}
         </Link>
     );
 };

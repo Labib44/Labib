@@ -1,4 +1,4 @@
-import owner from "../../../assets/home/banner/owner.png"
+import owner from "../../../assets/home/banner/labib.png"
 import hi from "../../../assets/home/banner/hi-icon.png"
 import { Icon } from '@iconify/react';
 import brand from "../../../assets/home/banner/brand.png"
@@ -6,6 +6,7 @@ import VideoPlayer from "../../../component/VideoPlayer/VideoPlayer";
 import shape2 from "../../../assets/animation/shape-2.png";
 import shape3 from "../../../assets/animation/shape-3.png";
 import { useTheme } from "../../../context/ThemeProvider/ThemeProvider";
+import reactJs from "../../../assets/home/banner/reactJs.png"
 
 
 const Banner = () => {
@@ -22,7 +23,7 @@ const Banner = () => {
                         <img src={hi} alt="" className="w-12 " />
                         <div className="ml-5">
                             <p className={`${!isDark ? "text-white" :"text-accent"}`}>Hi, I am </p>
-                            <p className={`" text-xl font-bold" ${!isDark ? "text-white": "text-primary"}`}>Micale</p>
+                            <p className={`" text-xl font-bold font-sans" ${!isDark ? "text-white": "text-primary"}`}>LABIB</p>
                         </div>
                     </div>
                     <div className=" max-w-xs">
@@ -35,24 +36,25 @@ const Banner = () => {
                 {/* ----------2---------- */}
                 <div className="flex md:flex-col sm:flex-col justify-between mt-40 max-h-24 mx-40 lg:mx-5 md:mx-5 sm:mx-5">
                     <div className={`"  rounded-2xl p-3 lg:mt-0 md:mt-5 sm:mt-5" ${!isDark ? "bg-[#303841] text-white":"bg-white text-primary"}`}>
-                        <div className="flex items-center p-2">
-                            <Icon icon="twemoji:video-game" className="text-2xl mr-3" />
-                            <p>3D Gameing</p>
+                        <div className="flex items-center pt-2">
+                            <Icon icon="vscode-icons:file-type-reactjs" className="text-3xl mr-3" />
+                            {/* <img src={reactJs} alt="" className="h-8 w-9 mr-2" /> */}
+                            <p>React Js</p>
                         </div>
-                        <div className="flex items-center p-2">
-                            <Icon icon="ic:twotone-laptop" className="text-2xl mr-3" />
-                            <p> Interaction Designer</p>
+                        <div className="flex items-center pt-2">
+                            <Icon icon="teenyicons:nextjs-outline" className="text-3xl mr-3" />
+                            <p>Next Js</p>
                         </div>
                     </div>
 
                     <div className={`" rounded-2xl p-3 lg:mt-0 md:mt-5 sm:mt-5" ${!isDark ? "bg-[#303841] text-white" : "bg-white text-primary"}`}>
                         <div className="flex items-center p-2">
                             <Icon icon="ic:outline-email" className="text-2xl mr-3" />
-                            <p>MicaelRich@gmai.com</p>
+                            <p>mdlabib162@gmail.com</p>
                         </div>
                         <div className="flex items-center p-2">
                             <Icon icon="mdi:phone-outline" className="text-2xl mr-3" />
-                            <p> +91 2578 621 5132</p>
+                            <p>01739999465</p>
                         </div>
                     </div>
 
@@ -60,10 +62,10 @@ const Banner = () => {
                 {/* --------------3------------ */}
                 <div className="flex md:flex-col sm:flex-col justify-between mt-40 mx-72 lg:mx-28 md:mx-5 sm:mx-5">
                     <div className="flex items-center p-3 lg:mt-0 md:mt-5 sm:mt-5">
-                        <p className={`" text-6xl lg:text-4xl font-bold " ${!isDark ? "text-white" : "text-primary"}`}>10</p>
+                        <p className={`" text-6xl lg:text-4xl font-bold " ${!isDark ? "text-white" : "text-primary"}`}>2</p>
                         <div className="text-accent p-2">
                             <p>Years</p>
-                            <p className="">3D Gameing</p>
+                            <p className="">M E R N</p>
                         </div>
 
                     </div>
@@ -79,7 +81,7 @@ const Banner = () => {
                     <img src={shape2} alt="" className=' animate-shape' />
                 </div>
             </div>
-            <div className=" w-[790px] lg:w-[710px] md:w-auto sm:w-auto mx-auto -mt-[825px] lg:-mt-[834px] md:mt-0 sm:mt-0 ">
+            <div className=" w-[790px] lg:w-[710px] md:w-auto sm:w-auto mx-auto -mt-[709px] lg:-mt-[834px] md:mt-0 sm:mt-0 ">
                 <img src={owner} alt="" className="pr-20 lg:pr-20 md:pr-10 sm:pr-10 w-full" />
             </div>
 

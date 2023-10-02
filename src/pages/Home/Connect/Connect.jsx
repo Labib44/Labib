@@ -19,8 +19,8 @@ const Connect = () => {
                     {/* left side */}
                     <div>
                         <div>
-                            <h1 className={`' text-3xl font-bold ' ${!isDark ? "text-white" : " text-primary "}`}>Let's Connect</h1>
-                            <p className='text-[18px] text-accent my-5'>Looking for help? Fill the form and start a new adventure.</p>
+                            <h1 className={`' text-3xl font-bold ' ${!isDark ? "text-white" : " text-primary "}`}>Let's get in touch</h1>
+                            <p className='text-[18px] text-accent my-5'>I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.</p>
                             <hr className='mr-5' />
                         </div>
                         <div className='mt-5'>
@@ -28,8 +28,8 @@ const Connect = () => {
                             <div className='flex items-center space-x-4 mt-3'>
                                 <Icon icon="mdi:home-outline" className='text-3xl text-secondary' />
                                 <div className={`'  text-[17px] ' ${!isDark ? "text-white" : " text-slate-700 "}`}>
-                                    <p className='py-2'>744 New York Ave, Brooklyn, Kings,</p>
-                                    <p>New York 10224</p>
+                                    <p className='py-2'>Dhaka, Bangladesh.</p>
+                                    <p>Mirpur-6.</p>
                                 </div>
                             </div>
                         </div>
@@ -38,8 +38,8 @@ const Connect = () => {
                             <div className='flex items-center space-x-4 mt-3'>
                                 <Icon icon="mdi:phone-outline" className='text-3xl text-secondary' />
                                 <div className={`' text-slate-700 text-[17px] ' ${!isDark ? "text-white" : " text-slate-700 "}`}>
-                                    <p className='py-2'>(+642) 245 356 432</p>
-                                    <p>(+420) 336 476 328</p>
+                                    <p className='py-2'>01739999465</p>
+                                    {/* <p>(+420) 336 476 328</p> */}
                                 </div>
                             </div>
                         </div>
@@ -48,8 +48,7 @@ const Connect = () => {
                             <div className='flex items-center space-x-4 mt-3'>
                                 <Icon icon="mdi:email-outline" className='text-3xl text-secondary' />
                                 <div className={`' text-slate-700 text-[17px] ' ${!isDark ? "text-white" : " text-slate-700 "}`}>
-                                    <p className='py-2'>hellosuppot@gmail.com</p>
-                                    <p>help@.com</p>
+                                    <p className='py-2'>mdlabib162@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +58,7 @@ const Connect = () => {
                     <div className={`' rgbBorder rounded-3xl border-l-[4px] shadow-xl p-10 mt-16 z-10 ' ${!isDark ? "bg-[#303841]" : " bg-[#F4F6FB]  "}`}>
                         <p className='text-accent text-xl font-semibold'>Let's talk</p>
                         <h1 className={`' text-3xl font-bold  pt-2 pb-3 ' ${!isDark ? "text-white" : " text-primary "}`}>Enter your project details</h1>
-                        <p className='text-[17px] text-accent'>Content here, content here', making it look like readable English. Many desktop publishing packages.</p>
+                       
                         {/* Form */}
                         <div className='mt-10'>
                             <form onSubmit={handleSubmit(handleContact)}>

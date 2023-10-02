@@ -30,22 +30,38 @@
     height: 100%;
     width: 95%;
     border-radius: 6px;
-    background: #ecb746;
+    background: #93BCD5;
     animation: progress 0.6s ease-in-out forwards;
     opacity: 0;
 }
 
-.skill-per.development {
+.skill-per.htmlCss {
     width: 90%;
     animation-delay: 0.1s;
 }
-.skill-per.design {
-    width: 80%;
+.skill-per.reactJs {
+    width: 75%;
     animation-delay: 0.2s;
 }
 
-.skill-per.branding{
-    width: 75%;
+.skill-per.nextJs{
+    width: 50%;
+    animation-delay: 0.3s;
+}
+.skill-per.JavaScript{
+    width: 70%;
+    animation-delay: 0.3s;
+}
+.skill-per.nodeJs{
+    width: 60%;
+    animation-delay: 0.3s;
+}
+.skill-per.mongoDb{
+    width: 65%;
+    animation-delay: 0.3s;
+}
+.skill-per.gitHub{
+    width: 70%;
     animation-delay: 0.3s;
 }
 
@@ -72,7 +88,7 @@
     color: #fff;
     padding: 2px 6px;
     border-radius: 3px;
-    background: #a76714;
+    background: #75a9ae;
     z-index: 1;
 }
 

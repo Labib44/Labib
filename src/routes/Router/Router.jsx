@@ -13,7 +13,7 @@ const routers=createBrowserRouter([
                 path:"/", element:<Home></Home>
             },
             {
-                path:"/allProducts", element:<AllProjects></AllProjects>
+                path:"/allProjects", element:<AllProjects></AllProjects>
             },
             {
                 path:"/details", element:<ProjectDetails></ProjectDetails>

@@ -17,7 +17,7 @@ const Works = () => {
                     </div>
                     <div className="flex items-center underline underline-offset-8 decoration-2 decoration-secondary py-0">
 
-                        <Link to={"/allProducts"} className="text-xl text-secondary font-bold mr-2">More Work</Link>
+                        <Link to={"/allProjects"} className="text-xl text-secondary font-bold mr-2">More Work</Link>
                         <BsArrowRight className="text-2xl text-secondary"></BsArrowRight>
                     </div>
                 </div>

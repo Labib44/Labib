@@ -9,10 +9,12 @@ import 'swiper/css/navigation';
 // import required modules
 
 import { Autoplay, Navigation } from 'swiper/modules';
-import img1 from "../../../../assets/workSlider/img-1.png"
-import img2 from "../../../../assets/workSlider/img-2.png"
-import img3 from "../../../../assets/workSlider/img-3.png"
-import img4 from "../../../../assets/workSlider/img-4.png"
+import img1 from "../../../../assets/workSlider/AlQuran.png"
+import img2 from "../../../../assets/workSlider/introBangla.png"
+import img3 from "../../../../assets/workSlider/careeh.png"
+import img4 from "../../../../assets/workSlider/carZone.png"
+import img5 from "../../../../assets/workSlider/delicious.png"
+import img6 from "../../../../assets/workSlider/doctorsPortal.png"
 
 const WorkSlider = () => {
     const progressCircle = useRef(null);
@@ -26,111 +28,46 @@ const WorkSlider = () => {
     const sliderData = [
         {
             img: img1,
-            header:"Web Design",
-            title:"E-Commerce",
-            textPrimary:"text-[#1C2F50]",
+            header: "Proggamoy AI Quran",
+            title: "E-Commerce",
+            textPrimary: "text-[#4D4800]",
         },
         {
             img: img2,
-            header:"Web Design",
-            title:"E-Commerce",
-            textPrimary:"text-[#1C2F50]",
+            header: "Blog - Introbangla Ltd",
+            title: "Blog website.",
+            textPrimary: "text-[#1F65A4]",
         },
         {
             img: img3,
-            header:"NFT Web Design",
-            title:"NFT Maerketplace",
-            textPrimary:"text-[#FFFFFF]",
-            textSecondary:"text-[#ffffff80]",
+            header: "Charee",
+            title: "Business website",
+            textPrimary: "text-[#FF6101]",
         },
         {
             img: img4,
-            header:"App Design",
-            title:"Mobile App ",
-            textPrimary:"text-[#FFFFFF]",
-            textSecondary:"text-[#ffffff80]",
+            header: "Car Zone",
+            title: "E-Commerce",
+            textPrimary: "text-[#65483F]",
         },
         {
-            img: img1,
-            header:"Web Design",
-            title:"E-Commerce",
-            textPrimary:"text-[#1C2F50]",
+            img: img5,
+            header: "Delicious Food",
+            title: "Business website",
+            textPrimary: "text-[#65483F]",
         },
         {
-            img: img2,
-            header:"Web Design",
-            title:"E-Commerce",
-            textPrimary:"text-[#1C2F50]",
+            img: img6,
+            header: "Doctors Portal",
+            title: "Booking website",
+            textPrimary: "text-[#495164]",
         },
-        {
-            img: img3,
-            header:"NFT Web Design",
-            title:"NFT Maerketplace",
-            textPrimary:"text-[#FFFFFF]",
-            textSecondary:"text-[#ffffff80]",
-        },
-        {
-            img: img4,
-            header:"App Design",
-            title:"Mobile App ",
-            textPrimary:"text-[#FFFFFF]",
-            textSecondary:"text-[#ffffff80]",
-        },
-        {
-            img: img1,
-            header:"Web Design",
-            title:"E-Commerce",
-            textPrimary:"text-[#1C2F50]",
-        },
-        {
-            img: img2,
-            header:"Web Design",
-            title:"E-Commerce",
-            textPrimary:"text-[#1C2F50]",
-        },
-        {
-            img: img3,
-            header:"NFT Web Design",
-            title:"NFT Maerketplace",
-            textPrimary:"text-[#FFFFFF]",
-            textSecondary:"text-[#ffffff80]",
-        },
-        {
-            img: img4,
-            header:"App Design",
-            title:"Mobile App ",
-            textPrimary:"text-[#FFFFFF]",
-            textSecondary:"text-[#ffffff80]",
-        },
-        {
-            img: img1,
-            header:"Web Design",
-            title:"E-Commerce",
-            textPrimary:"text-[#1C2F50]",
-        },
-        {
-            img: img2,
-            header:"Web Design",
-            title:"E-Commerce",
-            textPrimary:"text-[#1C2F50]",
-        },
-        {
-            img: img3,
-            header:"NFT Web Design",
-            title:"NFT Maerketplace",
-            textPrimary:"text-[#FFFFFF]",
-            textSecondary:"text-[#ffffff80]",
-        },
-        {
-            img: img4,
-            header:"App Design",
-            title:"Mobile App ",
-            textPrimary:"text-[#FFFFFF]",
-            textSecondary:"text-[#ffffff80]",
-        },
-       
-
         
+       
+        
+
+
+
     ]
 
     return (
@@ -185,12 +122,16 @@ const WorkSlider = () => {
                         key={idx}
                     >
                         <SwiperSlide>
-                            <div className=" relative">
-                                <img src={slData.img} alt="" className="rounded-[30px] " />
-                                <div className=" fixed top-5 p-10 w-full">
+                            <div className=" ">
+                                <div className="p-3">
                                     <h1 className={`${slData.textPrimary} text-xl font-semibold`}>{slData.header}</h1>
                                     <p className={`${slData.textSecondary}`}>{slData.title}</p>
                                 </div>
+                                <img src={slData.img} alt="" className="rounded-[30px] h-64" />
+                                {/* <div className=" fixed top-5 p-10 w-full">
+                                    <h1 className={`${slData.textPrimary} text-xl font-semibold`}>{slData.header}</h1>
+                                    <p className={`${slData.textSecondary}`}>{slData.title}</p>
+                                </div> */}
                             </div>
                         </SwiperSlide>
                     </div>)

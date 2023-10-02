@@ -1,5 +1,5 @@
 import { useState } from "react";
-import about from "../../../assets/about/about.png"
+import about from "../../../assets/about/labib2.png"
 import Experience from "./Experience/Experience";
 import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
@@ -22,8 +22,8 @@ const About = () => {
                         </div>
                     </div>
                     <div className=" mt-0 lg:mt-28 md:mt-28 sm:mt-16">
-                        <h1 className={`" text-6xl font-semibold p-3 " ${!isDark ? "text-white" : "text-primary"}`}>About Me</h1>
-                        <p className=" text-accent p-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English..</p>
+                        <h1 className={`" text-4xl font-semibold p-3 " ${!isDark ? "text-white" : "text-primary"}`}>About Me</h1>
+                        <p className=" text-accent p-3">Dependable web developer with a strong work ethic and excellent customer service record. Deeply knowledgeable in a wide variety of computer languages, including HTML5, CSS3, Tailwindcss, Bootstrap5, JavaScript, React js, Next js, Node js, Express, Mongo Db, and GitHub and understands principles and techniques of initial website construction and ongoing maintenance. Strong communicator and is flexible with scheduling.</p>
 
                         <div>
                             <div className="grid grid-flow-col text-center text-gray-500 max-w-sm">
