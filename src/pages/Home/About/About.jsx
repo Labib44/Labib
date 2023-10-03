@@ -1,5 +1,5 @@
 import { useState } from "react";
-import about from "../../../assets/about/labib2.png"
+import about from "../../../assets/about/about.png"
 import Experience from "./Experience/Experience";
 import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
@@ -18,7 +18,12 @@ const About = () => {
                 <div className="flex gap-20 lg:gap-20 md:gap-10 sm:gap-7 lg:flex-wrap md:flex-wrap sm:flex-wrap p-5 pb-[95px] rounded-3xl shadow-lg">
                     <div className="">
                         <div className=" aboutRgb w-[550px] md:w-[550px] sm:w-[300px] h-[550px] md:h-[550px] sm:h-[300px] rounded-full mx-0 lg:mx-48 md:mx-20 sm:mx-5">
-                            <img src={about} alt="" className="" />
+                            <div className="avatar">
+                                <div className="w-[550px] rounded-full">
+                                    <img src={about} alt="" className="w-full" />
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div className=" mt-0 lg:mt-28 md:mt-28 sm:mt-16">
