@@ -38,17 +38,18 @@ const Footer = () => {
                         <h1 className='text-[18px] font-semibold px-16 lg:px-0 md:px-0 sm:px-0'>A Private Limited is the most popular type of partnership Malta. The limited liability is, in fact, the only type of company allowed by Companies.</h1>
                         <div className="flex space-x-3 px-16 lg:px-0 md:px-0 sm:px-0">
                             <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
-                                <Icon icon="ic:round-facebook" className="text-2xl  " />
+                                <a href="https://www.facebook.com/md.labib.9/" target="_blank" rel="noreferrer"><Icon icon="ic:round-facebook" className="text-2xl  " /></a>
                             </div>
                             <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
-                                <Icon icon="mdi:instagram" className="text-2xl" />
+                                <a href="https://www.linkedin.com/in/labibur-rahman/" target="_blank" rel="noreferrer"><Icon icon="mdi:linkedin" className="text-2xl" /></a>
+                            </div>
+                            <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                               <a href="https://github.com/Labib44" target="_blank" rel="noreferrer"><Icon icon="uiw:github" className="text-2xl" /></a> 
                             </div>
                             <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
                                 <Icon icon="mdi:twitter" className="text-2xl" />
                             </div>
-                            <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
-                                <Icon icon="mdi:linkedin" className="text-2xl" />
-                            </div>
+
                             <div className="w-10 h-10 bg-[#1C2F50] hover:bg-secondary text-secondary hover:text-primary rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
                                 <Icon icon="mdi:pinterest" className="text-2xl" />
                             </div>
@@ -61,8 +62,8 @@ const Footer = () => {
                             <div className="flex flex-col">
                                 {
                                     fristLinkData.map((data, idx) =>
-                                        <a key={idx} href={data.url} 
-                                        className=' text-[16px] font-semibold pt-3 hover:text-secondary duration-700 flex items-center'><span><BsArrowRight className="text-xl mr-3"></BsArrowRight></span> {data.title}</a>
+                                        <a key={idx} href={data.url}
+                                            className=' text-[16px] font-semibold pt-3 hover:text-secondary duration-700 flex items-center'><span><BsArrowRight className="text-xl mr-3"></BsArrowRight></span> {data.title}</a>
                                     )
                                 }
                             </div>
@@ -72,7 +73,7 @@ const Footer = () => {
                             <h2 className={`" font-bold text-2xl "  ${!isDark ? "text-white" : ""}`}>Linkedin</h2>
                             <div className={`" box arrow-bottom mt-4 p-5 "`}>
                                 <p className="mb-3 lg:mb-3 md:mb-2 sm:mb-0">The full monty spiffing good time .</p>
-                                <Link className="text-white hover:text-secondary duration-700">@Harold.com</Link>
+                                <Link className="text-white hover:text-secondary duration-700">labib.vercel.app</Link>
                             </div>
                             <br />
                             <div className="flex -mt-1">
@@ -100,7 +101,7 @@ const Footer = () => {
             </footer>
             <footer className={`" footer footer-center p-5 text-base-content h-20 " ${!isDark ? "bg-[#343F4B]" : "bg-[#15233B]"}`}>
                 <div className="flex justify-center text-xl lg:text-xl md:text-xl sm:text-sm">
-                    <p className="text-accent">© 2023 Harold. Design with -</p>
+                    <p className="text-accent">© 2023 Labibur Rahman. Design with -</p>
                     <FaHeart className="text-red-600"></FaHeart>
                     <p className="text-accent">All rights reserved. </p>
                 </div>
