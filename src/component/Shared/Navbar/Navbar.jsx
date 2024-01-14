@@ -27,8 +27,8 @@ const Navbar = () => {
     const menuItem = <>
         <li className="flex"><Link to="/" className='flex items-center text-[13px]  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>HOME</Link></li>
         <li className="flex"> <Scroll.Link to="about" spy={true} smooth={true} offset={-200} duration={2000} className='flex items-center text-[13px]  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>ABOUT US</Scroll.Link></li>
-        <li className="flex"> <Scroll.Link to="service" spy={true} smooth={true} duration={2000} className='flex items-center text-[13px]  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>SERVICE</Scroll.Link></li>
         <li className="flex"> <Scroll.Link to="works" spy={true} smooth={true} offset={-100} duration={2000} className='flex items-center text-[13px]  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>WORK</Scroll.Link></li>
+        <li className="flex"> <Scroll.Link to="service" spy={true} smooth={true} duration={2000} className='flex items-center text-[13px]  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>SERVICE</Scroll.Link></li>
         <li className="flex"> <Scroll.Link to="pricing" spy={true} smooth={true} duration={2000} className='flex items-center text-[13px]  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>PRICING</Scroll.Link></li>
         <li className="flex"> <Scroll.Link to="testimonial" spy={true} smooth={true} offset={-100} duration={2000} className='flex items-center text-[13px]  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>TESTIMONIAL</Scroll.Link></li>
         <li className="flex"> <Scroll.Link to="blog" spy={true} smooth={true} offset={-100} duration={2000} className='flex items-center text-[13px]  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>BLOG</Scroll.Link></li>

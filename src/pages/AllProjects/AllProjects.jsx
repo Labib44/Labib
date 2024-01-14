@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AllProjectsCard from "./AllProjectsCard";
 import { useTheme } from "../../context/ThemeProvider/ThemeProvider";
+import axios from 'axios';
 
 
 const AllProjects = () => {
@@ -8,10 +9,11 @@ const AllProjects = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch('projects.json')
-            .then(res => res.json())
-            .then(data => setProjects(data))
+        axios.get(`${import.meta.env.VITE_SERVER_URI}/api/v1/project`)
+            .then((res) => setProjects(res.data.data))
     }, [])
+
+   
     return (
         <div className={` ${!isDark ? "bg-[#343F4B] " : "bg-[#F4F6FB]"}`}>
             <div className=" container mx-auto pt-20 px-24 lg:px-0 md:px-0 sm:px-0">
@@ -19,8 +21,8 @@ const AllProjects = () => {
 
                 <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 pb-36">
                     {
-                        projects.map((project) => <AllProjectsCard
-                            key={project.id}
+                        projects?.map((project) => <AllProjectsCard
+                            key={project._id}
                             project={project}
                         ></AllProjectsCard>)
                     }

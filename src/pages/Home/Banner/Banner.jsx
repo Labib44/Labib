@@ -6,7 +6,6 @@ import VideoPlayer from "../../../component/VideoPlayer/VideoPlayer";
 import shape2 from "../../../assets/animation/shape-2.png";
 import shape3 from "../../../assets/animation/shape-3.png";
 import { useTheme } from "../../../context/ThemeProvider/ThemeProvider";
-import reactJs from "../../../assets/home/banner/reactJs.png"
 
 
 const Banner = () => {
@@ -29,7 +28,7 @@ const Banner = () => {
                     <div className=" max-w-xs">
                         <Icon icon="carbon:play-filled" className="text-5xl text-[#C7E9EA] cursor-pointer" onClick={() => window.my_modal_3.showModal()} />
                         <p className="text-xl text-accent mt-3">I am designer during daytime & work with batman during night.</p>
-                        {/* <BannerModal></BannerModal> */}
+                       
                         <VideoPlayer></VideoPlayer>
                     </div>
                 </div>
@@ -38,7 +37,6 @@ const Banner = () => {
                     <div className={`"  rounded-2xl p-3 lg:mt-0 md:mt-5 sm:mt-5" ${!isDark ? "bg-[#303841] text-white":"bg-white text-primary"}`}>
                         <div className="flex items-center pt-2">
                             <Icon icon="vscode-icons:file-type-reactjs" className="text-3xl mr-3" />
-                            {/* <img src={reactJs} alt="" className="h-8 w-9 mr-2" /> */}
                             <p>React Js</p>
                         </div>
                         <div className="flex items-center pt-2">

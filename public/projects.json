@@ -5,8 +5,8 @@
         "name": "Proggamoy AI Quran",
         "title":"Nonprofit website",
         "textPrimary": "text-[#4D4800]", 
-        "technology": "Tailwind css, React js, JavaScript, ",
-        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "
+        "technology": "React Js, JavaScript, Tailwind css, Node Js, Express Js",
+        "details": "The 'Proggamoy Quran' app will be designed to be the ultimate tool for studying the Quran. It will offer a wide range of features to aid in Quran learning and memorization, including a robust audio system with repeat functions."
     },
     {
         "_id": "2",
@@ -14,8 +14,8 @@
         "name": "Charee",
         "title":"Business website",
         "textPrimary": "text-[#FF6101]",
-        "technology": "Tailwind css, React js, JavaScript, ",
-        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "
+        "technology": "React Js, JavaScript, Tailwind css,",
+        "details": "Careeh is aiming to lead a logistic company refers to a comprehensive and integrated organization that offers end-to-end solutions for managing the entire logistics process, from the initial point of origin to the final destination. It combines various services, technologies, and expertise to efficiently handle the movement, storage, and distribution of goods or products."
     },
     {
         "_id": "3",
