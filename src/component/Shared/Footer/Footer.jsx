@@ -72,7 +72,7 @@ const Footer = () => {
                         <div className="flex flex-col">
                             <h2 className={`" font-bold text-2xl "  ${!isDark ? "text-white" : ""}`}>Linkedin</h2>
                             <div className={`" box arrow-bottom mt-4 p-5 "`}>
-                                <p className="mb-3 lg:mb-3 md:mb-2 sm:mb-0">The full monty spiffing good time .</p>
+                                <p className="mb-2 lg:mb-3 md:mb-2 sm:mb-0">The full monty spiffing good time .</p>
                                 <Link className="text-white hover:text-secondary duration-700">labib.vercel.app</Link>
                             </div>
                             <br />
