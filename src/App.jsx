@@ -18,8 +18,6 @@ function App() {
       timeoutId = window.setTimeout(() => setLoader(false), 1500);
     };
     timeOut();
-    // AOS.init();
-    // AOS.refresh();
     return () => window.clearTimeout(timeoutId);
   }, []);
 

@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const AllProjects = () => {
     const { isDark } = useTheme();
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState();
 
     useEffect(() => {
         axios.get(`${import.meta.env.VITE_SERVER_URI}/api/v1/project`)
